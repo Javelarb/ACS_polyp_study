@@ -1,0 +1,127 @@
+#Commands log:
+
+#Ran on HPC using bbmap
+/dfs3/bio/javelarb/bbmap/bbduk.sh \
+in=/dfs3/bio/whitesonlab/julio_colorectal_hiseq_8-29-19/128.120.88.251/P202S9080133-01-01/raw_data/JA_CC_60/JA_CC_60_USPD16103941_H3LTJBBXX_L3_1.fq.gz \
+in2=/dfs3/bio/whitesonlab/julio_colorectal_hiseq_8-29-19/128.120.88.251/P202SC19080133-01-01/raw_data/JA_CC_60/JA_CC_60_USPD16103941_H3LTJBBXX_L3_2.fq.gz \
+ref=phix,adapters,artifacts \
+out=multiplexed_no_phix_adapters.1.fastq.gz \
+out2=multiplexed_no_phix_adapters.2.fastq.gz \
+stats=bbduk_stats.txt \
+refstats=bbduk_ref_stats.txt
+
+#Ran on HPC
+/dfs3/bio/javelarb/bbmap/demuxbyname.sh \
+in=/dfs3/bio/javelarb/CC_Fall_2019/multiplexed_no_phix_adapters.1.fastq.gz \
+in2=/dfs3/bio/javelarb/CC_Fall_2019/multiplexed_no_phix_adapters.2.fastq.gz \
+delimiter=: prefixmode=f out=demux_out2/%_#.fastq.gz names=/dfs3/bio/javelarb/CC_Fall_2019/barcodes2.txt \
+stats=demux_stats2.txt
+
+for i in {1..265}; do
+barcode=$(awk "NR == ${i}" barcodes.txt)
+name=$(awk "NR == ${i}" names.txt)
+mv ${barcode}_1.fastq.gz ${name}_1.fastq.gz
+mv ${barcode}_2.fastq.gz ${name}_2.fastq.gz;
+done
+
+#variables:
+data_dir=/media/julio/Storage1/CRC/Summer_2019_colon_cancer_data
+
+#First, create sample file list:
+
+cd $data_dir/merged_raw_seqs
+for x in *.fastq.gz; do
+echo ${x}; done >> sample_list_temp.txt
+
+#Change sed input keyphrase if not "_"
+sed 's/_.*//' sample_list_temp.txt >> sample_list_temp2.txt
+awk '!a[$0]++' sample_list_temp2.txt >> sample_list.txt
+rm sample_list_temp.txt
+rm sample_list_temp2.txt
+mv sample_list.txt $data_dir
+cd $data_dir
+
+#Next, concatenate files, might not have to do this for Hiseq, only something that splits samples across lanes.
+#mkdir merged_raw_seqs
+
+#Need to fix this. this is concatting the _5 files into the non _5 files.
+#while read x; do
+#cat ${x}_S*R1* >> ${x}_R1.fastq.gz
+#cat ${x}_S*R2* >> ${x}_R2.fastq.gz
+#mv ${x}_1.fastq.gz merged_raw_seqs/${x}_1.fastq.gz
+#mv ${x}_2.fastq.gz merged_raw_seqs/${x}_2.fastq.gz;
+#done < sample_list.txt
+
+#mkdir raw_seqs
+#mv *.fastq.gz raw_seqs/
+
+#Get rid of samples with <10k reads
+while read x; do
+echo -n "${x} "
+echo $(zcat merged_raw_seqs/${x}_1.fastq.gz|wc -l)/4|bc;
+done < sample_list.txt > raw_read_counts.txt
+awk '(NR>1) && ($2 > 10000 ) ' raw_read_counts.txt > sample_list3.txt
+awk '{$2=""; print $0}' sample_list3.txt > sample_list.txt
+rm sample_list3.txt
+
+#FastQC
+mkdir fastQC_out_preQC
+/media/julio/Storage1/Software/FastQC/fastqc merged_raw_seqs/*.fastq.gz -o fastQC_out_preQC -t 16
+rm fastQC_out_preQC/*.zip 
+
+#These should be pretty general parameters. But can modify.
+while read x; do
+echo ${x}
+prinseq++ -fastq merged_raw_seqs/${x}_1.fastq.gz -fastq2 merged_raw_seqs/${x}_2.fastq.gz -trim_left 5 -trim_right 5 -min_len 100 -trim_qual_right 28 -min_qual_mean 25 -threads 16 -out_name ${x};
+done < sample_list.txt
+
+#Cleanup prinseq
+mkdir QF_seqs
+mv *good* QF_seqs/
+
+#FastQC post QC
+mkdir fastQC_out_postQC
+/media/julio/Storage1/Software/FastQC/fastqc QF_seqs/*.fastq.gz -o fastQC_out_postQC -t 16
+rm fastQC_out_postQC/*.zip
+
+#Filter human reads, using Bowtie2, using hg38
+mkdir QF_nonhuman_seqs
+while read x; do
+bowtie2 -x /media/julio/Storage1/DBs/hg38/hg38 -1 QF_seqs/${x}_*R1* -2 QF_seqs/${x}_*R2* -p 16 --un-conc QF_nonhuman_seqs/${x};
+done < sample_list.txt
+
+#Clean up
+cd QF_nonhuman_seqs
+rename 's/$/.fastq/' *
+cd ../
+pigz QF_seqs/*.fastq
+
+#More taxonomy from IGGsearch
+export IGG_DB='/media/julio/Storage1/Software/IGGsearch/iggdb_v1.0.0'
+while read x; do
+/media/julio/Storage1/Software/IGGsearch/run_iggsearch.py search --outdir iggsearch_taxonomy/${x} --m1 QF_nonhuman_seqs/${x}.1.fastq --m2 QF_nonhuman_seqs/${x}.2.fastq --threads 16 --lenient;
+done < sample_list4.txt
+/media/julio/Storage1/Software/IGGsearch/run_iggsearch.py merge --input iggsearch_taxonomy --intype dir --outdir iggsearch_taxonomy/
+
+#Running the assembly:
+#See megahit.sh 
+
+#Predicting ORFs:
+prodigal -p meta -i assembly/assembly.contig -a assembly/AA_ORFs.faa
+
+#Using eggNOG mapper instead
+python2 '/media/julio/Storage1/Software/eggnog-mapper/emapper.py' -i assembly/AA_ORFs.faa --output eggnog --cpu 16 -m diamond --usem
+
+#SparCC
+fastspar -c rared_OTU_table.txt -r sparcc_corr.txt -a sparcc_covar.txt -t 16 -y
+MakeBootstraps.py rared_OTU_table.txt -t permuted_#.txt -p sparcc/
+
+for i in `seq 0 99`; do 
+fastspar -c sparcc/permuted_${i}.txt -r sparcc/sim_sparcc/simulated_sparcc_corr_$i.txt -a sparcc/sim_sparcc/sparcc_covar_${i}.txt -t 16 -y >> boot_sparcc.log; 
+done
+PseudoPvals.py sparcc_corr.txt sparcc/sim_sparcc/simulated_sparcc_corr_#.txt 100 -o sparcc_pvals.txt -t one_sided
+
+#MicrobeCensus
+for i in QF_nonhuman_seqs/*.1.fastq.gz; do tmp=$(basename ${i} .1.fastq.gz); run_microbe_census.py -t 32 QF_nonhuman_seqs/${tmp}.1.fastq.gz,QF_nonhuman_seqs/${tmp}.2.fastq.gz microbe_census/${tmp}.txt; done
+for i in QF_nonhuman_seqs/*.1.fastq.gz; do tmp=$(basename ${i} .1.fastq.gz); echo -n "${tmp} "; awk 'FNR == 13 {print $2}' microbe_census/${tmp}.txt; done >> mic_cense_genome_equivs_merged.txt
+

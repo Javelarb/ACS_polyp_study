@@ -1,0 +1,3 @@
+#The taxa file for the shotgun data can be found in the IGGSearch database.
+#See: https://github.com/snayfach/IGGsearch
+
