@@ -125,3 +125,6 @@ PseudoPvals.py sparcc_corr.txt sparcc/sim_sparcc/simulated_sparcc_corr_#.txt 100
 for i in QF_nonhuman_seqs/*.1.fastq.gz; do tmp=$(basename ${i} .1.fastq.gz); run_microbe_census.py -t 32 QF_nonhuman_seqs/${tmp}.1.fastq.gz,QF_nonhuman_seqs/${tmp}.2.fastq.gz microbe_census/${tmp}.txt; done
 for i in QF_nonhuman_seqs/*.1.fastq.gz; do tmp=$(basename ${i} .1.fastq.gz); echo -n "${tmp} "; awk 'FNR == 13 {print $2}' microbe_census/${tmp}.txt; done >> mic_cense_genome_equivs_merged.txt
 
+#Humann3
+
+while read i; do humann_renorm_table -i humann3/${i}.humann/${i}.merged_pathabundance.tsv -o humann3/${i}.humann/${i}_RPK_pathabundance.tsv; done < sample_manifest.txt

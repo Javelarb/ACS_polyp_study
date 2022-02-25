@@ -67,11 +67,10 @@ ITS_shannon <- ggplot(data = alpha_div) +
   geom_boxplot(outlier.shape = NA, lwd = 1) +
   theme_classic(base_size = 14, base_line_size = 1) +
   labs(x = NULL, y = 'Shannon index', fill = 'Subject type', title = bquote("ITS - Individuals:"~.(length(unique(alpha_div$Patient))))) +
-  geom_point(position = position_jitterdodge(jitter.width = .8), alpha = .5) +
-  scale_fill_manual(name = "Subject type", values=c("gold", "lightsalmon", "plum2"), labels = c("Healthy (33)", "Tubular adenoma (43)", "Serrated polyp (28)")) +
+  geom_point(position = position_jitterdodge(jitter.width = .4), alpha = 1/2) +
+  scale_fill_manual(name = "Subject type", values=c("gold", "lightsalmon", "plum2"), labels = c("Polyp free (33)", "Tubular adenoma (43)", "Serrated polyp (28)")) +
   scale_x_discrete(labels = c("Aspirate (42)", "Brush (46)", "Lavage (16)")) +
-  theme(legend.position = "none", axis.line = element_line(color = "black"), panel.background = element_blank(), 
-        axis.text = element_text(color = "black", size = 12), axis.title = element_text(size = 12), title = element_text(size = 12))
+  theme(legend.position = "none", axis.text.x = element_blank(), axis.ticks.x = element_blank())
 ITS_shannon
 
 ITS_shannon_polyp <- ggplot(data = alpha_div) +
@@ -79,7 +78,7 @@ ITS_shannon_polyp <- ggplot(data = alpha_div) +
   geom_boxplot() +
   theme_classic() +
   geom_point(position = position_jitterdodge(jitter.width = .4), alpha = .5) +
-  scale_fill_manual(values=c("forestgreen", "firebrick3", "steelblue"), labels = c("Healthy (33)", "Tubular adenoma (43)", "Serrated polyp (28)")) +
+  scale_fill_manual(values=c("forestgreen", "firebrick3", "steelblue"), labels = c("Polyp free (33)", "Tubular adenoma (43)", "Serrated polyp (28)")) +
   labs(x = NULL, y = "Shannon index", title = "Sample set 1 - ITS data", fill = "Subject type") +
   scale_x_discrete(labels = c("Aspirate (42)", "Brush (46)", "Lavage (16)")) + 
   theme(legend.position = "none")
@@ -104,12 +103,11 @@ ITS_rich <- ggplot(data = specno) +
   aes(x = as.character(SampleType), y = specno$`specnumber(ITS_rared_OTU)`, fill = SampleType) +
     geom_boxplot(outlier.shape = NA, lwd = 1) +
   theme_classic(base_size = 14, base_line_size = 1) +
-  labs(x = NULL, y = 'ASV richness', fill = 'Subject type', title = " ") +
-  geom_point(position = position_jitterdodge(jitter.width = .8), alpha = .5) +
-  scale_fill_manual(name = "Subject type", values=c("gold", "lightsalmon", "plum2"), labels = c("Healthy (33)", "Tubular adenoma (43)", "Serrated polyp (28)")) +
+  labs(x = NULL, y = 'Richness', fill = 'Subject type') +
+  geom_point(position = position_jitterdodge(jitter.width = .4), alpha = 1/2) +
+  scale_fill_manual(name = "Subject type", values=c("gold", "lightsalmon", "plum2"), labels = c("Polyp free (33)", "Tubular adenoma (43)", "Serrated polyp (28)")) +
   scale_x_discrete(labels = c("Aspirate (42)", "Brush (46)", "Lavage (16)")) +
-  theme(legend.position = "none", axis.line = element_line(color = "black"), panel.background = element_blank(), 
-        axis.text = element_text(color = "black", size = 12), axis.title = element_text(size = 12), title = element_text(size = 12))
+  theme(legend.position = "none", axis.text = element_text(size = 10))
 ITS_rich
 
 ITS_rich_polyp = ggplot(data = specno) +
@@ -118,11 +116,11 @@ ITS_rich_polyp = ggplot(data = specno) +
   geom_point(position = position_jitterdodge(jitter.width = .4), alpha = .5) +
   scale_x_discrete(labels = c("Aspirate (42)", "Brush (46)", "Lavage (16)")) +
   theme_classic() +
-  scale_fill_manual(values=c("forestgreen", "firebrick3", "steelblue"), labels = c("Healthy (33)", "Tubular adenoma (43)", "Serrated polyp (28)")) +
+  scale_fill_manual(values=c("forestgreen", "firebrick3", "steelblue"), labels = c("Polyp free (33)", "Tubular adenoma (43)", "Serrated polyp (28)")) +
   labs(x = NULL, y = "Richness", title = " ", fill = "Subject type")
 ITS_rich_polyp
 
-ITS_alpha <- plot_grid(ITS_shannon, ITS_rich, rel_widths = c(1, 1))
+ITS_alpha <- plot_grid(ITS_shannon, ITS_rich, ncol = 1, rel_widths = c(1,1))
 ITS_alpha_polyp <- plot_grid(ITS_shannon_polyp, ITS_rich_polyp, rel_widths = c(1, 1.55))
 
 ggsave("ITS_alpha.png", plot = ITS_alpha, device = "png", units = "in", dpi = 300, height = 5, width = 8)
@@ -184,17 +182,26 @@ adonis(formula = brush_OTU[,15:ncol(brush_OTU)] ~ brush_OTU$LabDiagnosis / as.ch
 adonis(formula = lavage_OTU[,15:ncol(lavage_OTU)] ~ lavage_OTU$LabDiagnosis / as.character(lavage_OTU$Patient), 
        data = lavage_OTU[,15:ncol(lavage_OTU)], method = "bray", permutations = 999, parallel = 16)
 
+merged_rared_mds = merged_rared_mds %>% mutate(LabDiagnosis = gsub("non-serrated", "TA", .$LabDiagnosis))
+
 #General plot
-ggplot(data = merged_rared_mds) +
+ITS_beta = ggplot(data = merged_rared_mds) +
   aes(x = MDS1, y = MDS2) +
-  theme_classic(base_size = 14, base_line_size = 1) +
-  geom_point(aes(pch = LabDiagnosis, fill = SampleType), size = 8, alpha = .4) + 
-  guides(color = F, fill = guide_legend(override.aes = list(shape = 21))) +
-  geom_text(label = merged_rared_mds$Patient, size = 4) +
-  theme(plot.title = element_text(size = 15, vjust = -1), plot.subtitle = element_text(size = 15)) +
-  scale_shape_manual(values = c(21,22,24), name = "Subject type", labels = c("Healthy (33)", "Tubular adenoma (43)", "Serrated polyp (28)")) +
-  scale_fill_manual(name = "Sample type", values=c("gold", "lightsalmon", "plum2"), 
-                    labels = c("Aspirate (42)", "Brush (46)", "Lavage (16)"))
+  theme_bw() +
+  geom_point(aes(pch = LabDiagnosis, fill = SampleType), size = 5, alpha = .5) + 
+  labs(x= "MDS1", y = "MDS2") +
+  scale_shape_manual(values = c(21,22,24), name = "Subject type", 
+                     labels = c("Polyp free (33)", "Serrated polyp (28)", "Tubular adenoma (43)"),
+                     limits = c("healthy", "serrated", "TA")) +
+  #stat_ellipse(linetype = 2, aes(group = LabDiagnosis), size = 1) +
+  guides(color = F, fill = guide_legend(order = 1, override.aes = list(shape = 21))) +
+  scale_fill_manual(name = "Sample type", values=c("gold", "lightsalmon", "plum2"), labels = c("Aspirate (42)", "Brush (46)", "Lavage (16)")) +
+  geom_text(label = merged_rared_mds$Patient, size = 2, color = "black") +
+  annotate("text", x = -1, y = .75, label = bquote("Stress ="~.(round(rared_mds$stress, digits = 2))))
+ITS_beta
+
+ggsave("Figure_2ITS.svg", plot = plot_grid(ITS_alpha, ITS_beta, nrow = 1, rel_widths = c(.35,.65), labels = c("C.", "D.")), 
+       device = "svg", units = "in", dpi = 300, height = 5, width = 11)
 
 #aspirate only
 ggplot(data = merged_asp_mds) +
@@ -230,37 +237,3 @@ ggplot(data = merged_lavage_mds) +
   scale_fill_discrete(name = "Subject Type") +
   geom_text(label = merged_lavage_mds$Patient, size = 4) +
   theme(plot.title = element_text(size = 15, vjust = -1), plot.subtitle = element_text(size = 15))
-
-###### TPL #######
-df3 <- rbind(asp_R_OTU, asp_L_OTU)
-df3 <- df3 %>% group_by(Patient) %>% filter(n()>1)
-taylor_out = NULL
-for (i in df3$Patient) {
-  assign(paste0("OTU_table_", i), df3[df3$Patient == i,]) #will create lots of variables
-  log.m <- log(apply(get(paste0("OTU_table_", i))[,-(1:(1+ncol(ITS_metadata)))], 2, mean))
-  log.v <- log(apply(get(paste0("OTU_table_", i))[,-(1:(1+ncol(ITS_metadata)))], 2, var))
-  log.m <- log.m[is.finite(log.m)]
-  log.v <- log.v[is.finite(log.v)]
-  log.m_v <- merge(log.m, log.v, by = "row.names")
-  fit <- lm(log.m_v$y ~ log.m_v$x)
-  c.value <- as.numeric(coef(fit)[1]) #constant
-  z.value <- as.numeric(coef(fit)[2]) #var of interest, z > 1 = aggregated, z = 1 random, z < 1 uniform
-  individual <- i
-  individual <- cbind(individual, z.value)
-  taylor_out <- rbind(taylor_out, individual)
-}
-
-taylor_out <- as.data.frame(unique(taylor_out))
-taylor_final <- merge(taylor_out, ITS_metadata, by.x = "individual", by.y = "Patient")
-taylor_final <- taylor_final[,c(1:2,11)]
-taylor_final <- unique(taylor_final)
-
-ggplot(data = taylor_final) +
-  aes(x = taylor_final$LabDiagnosis, y = taylor_final$z.value, fill = taylor_final$LabDiagnosis) +
-  geom_boxplot(outlier.shape = NA, lwd = 1) +
-  theme_classic(base_size = 14, base_line_size = 1) +
-  labs(x = 'Subject status', y = 'Taylor`s exponent' , fill = 'Subject status', 
-       title = 'Proximal + distal') +
-  geom_point(position = position_jitterdodge(jitter.width = .5)) +
-  theme(legend.position = "none")
-TukeyHSD(aov(formula = taylor_final$z.value ~ taylor_final$LabDiagnosis))

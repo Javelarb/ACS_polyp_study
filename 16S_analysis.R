@@ -24,7 +24,7 @@ OTU_taxonomy <- read.delim("/media/julio/Storage/CRC/Winter_2019_amplicon_CC_dat
 ###### Making a boxplot of read counts for all samples ################
 Read_counts <- read.delim("/media/julio/Storage/CRC/Winter_2019_amplicon_CC_data/Read_counts.tsv", stringsAsFactors = TRUE, row.names = 1, check.names = FALSE, comment.char = "#")
 Read_counts <- Read_counts[,-(2:4)]
-Read_counts <- melt(as.matrix(Read_counts))
+Read_counts <- reshape2::melt(as.matrix(Read_counts))
 
 read_counts_plus_metadata <- merge(Read_counts, metadata, by.x = "Var1", by.y = "row.names")
 
@@ -68,7 +68,7 @@ OTU_clean <- read.delim("OTU_clean_16S.txt", row.names = 1, check.names = F)
 
 #Determine rarefaction depth.
 sort(rowSums(OTU_clean))
-rarecurve(OTU_clean, step = 1000, label = FALSE)
+rarecurve(OTU_clean, step = 1000, label = F, sample = 3000, xlab = "Read Depth", col = "orange")
 rd <- 3000
 
 #Performing the actual rarefaction, be sure to change the 'sample = X' to the proper rarefaction depth. Should be >= 1000 at least.
@@ -97,10 +97,9 @@ fig2a1 <- ggplot(data = alpha_div) +
     theme_classic(base_size = 14, base_line_size = 1) +
     labs(x = NULL, y = 'Shannon index', fill = 'Subject type', title = bquote("16S - Individuals:"~.(length(unique(alpha_div$Patient))))) +
     geom_point(position = position_jitterdodge(jitter.width = .2), alpha = 1/2) +
-    scale_fill_manual(name = "Subject type", values=c("gold", "lightsalmon", "plum2"), labels = c("Healthy (39)", "Tubular adenoma (70)", "Serrated polyp (36)")) +
+    scale_fill_manual(name = "Subject type", values=c("gold", "lightsalmon", "plum2"), labels = c("Polyp free (39)", "Tubular adenoma (70)", "Serrated polyp (36)")) +
     scale_x_discrete(labels = c("Aspirate (52)", "Brush (64)", "Lavage (31)")) +
-    theme(legend.position = "none", axis.line = element_line(color = "black"), panel.background = element_blank(), 
-          axis.text = element_text(color = "black", size = 12), axis.title = element_text(size = 12), title = element_text(size = 12))
+    theme(legend.position = "none", axis.text.x = element_blank(), axis.ticks.x = element_blank())
 fig2a1
   
 ggplot(data = subset(alpha_div, alpha_div$SampleType == "brush")) +
@@ -129,12 +128,11 @@ fig2a2 <- ggplot(data = specno) +
   aes(x = as.character(SampleType), y = specno$`specnumber(rared_OTU)`, fill = as.character(SampleType)) +
   geom_boxplot(outlier.shape = NA, lwd = 1) +
   theme_classic(base_size = 14, base_line_size = 1) +
-  labs(x = NULL, y = 'Richness', fill = 'Subject type', title = "") +
+  labs(x = NULL, y = 'Richness', fill = 'Subject type') +
   geom_point(position = position_jitterdodge(jitter.width = .2), alpha = 1/2) +
-  scale_fill_manual(name = "Subject type", values=c("gold", "lightsalmon", "plum2"), labels = c("Healthy (39)", "Tubular adenoma (70)", "Serrated polyp (36)")) +
+  scale_fill_manual(name = "Subject type", values=c("gold", "lightsalmon", "plum2"), labels = c("Polyp free (39)", "Tubular adenoma (70)", "Serrated polyp (36)")) +
   scale_x_discrete(labels = c("Aspirate (52)", "Brush (64)", "Lavage (31)")) +
-  theme(legend.position = "none", axis.line = element_line(color = "black"), panel.background = element_blank(), 
-        axis.text = element_text(color = "black", size = 12), axis.title = element_text(size = 12), title = element_text(size = 12)) 
+  theme(legend.position = "none", axis.text = element_text(size = 10)) 
 fig2a2
 
 ggplot(data = subset(specno, specno$SampleType == "brush")) +
@@ -153,7 +151,7 @@ specno_lm <- as.data.frame(specno_lm)
 #specno_lm <- within(specno_lm, y <- relevel(y, "aspirate")) #There seems to be a bug where if you relevel the labdiagnosis then the sample type become significant?
 summary(specno_lm <- lme(x ~ y * z, data = specno_lm, random = ~1|p))
 
-fig2a <- plot_grid(fig2a1, fig2a2, rel_widths = c(1, 1))
+fig2a <- plot_grid(fig2a1, fig2a2, rel_widths = c(1, 1), ncol = 1)
 fig2a
 
 alpha_supp1 = ggplot(data = alpha_div) +
@@ -163,7 +161,7 @@ alpha_supp1 = ggplot(data = alpha_div) +
   theme_classic(base_size = 14, base_line_size = 1) +
   labs(x = NULL, y = 'Shannon index', fill = 'Subject type', title = "Sample set 1 - 16S data") +
   geom_point(position = position_jitterdodge(jitter.width = .2), alpha = .5) +
-  scale_fill_manual(name = "Subject type", values=c("forestgreen", "firebrick3", "steelblue"), labels = c("Healthy (39)", "Tubular adenoma (70)", "Serrated polyp (36)")) +
+  scale_fill_manual(name = "Subject type", values=c("forestgreen", "firebrick3", "steelblue"), labels = c("Polyp free (39)", "Tubular adenoma (70)", "Serrated polyp (36)")) +
   scale_x_discrete(labels = c("Aspirate (52)", "Brush (64)", "Lavage (31)")) +
   theme(legend.position = "none", axis.line = element_line(color = "black"), panel.background = element_blank(), 
         axis.text = element_text(color = "black", size = 12), axis.title = element_text(size = 12), title = element_text(size = 12))
@@ -175,7 +173,7 @@ alpha_supp2 = ggplot(data = specno) +
   theme_classic(base_size = 14, base_line_size = 1) +
   labs(x = NULL, y = 'Richness', fill = 'Subject type', title = "") +
   geom_point(position = position_jitterdodge(jitter.width = .2), alpha = .5) +
-  scale_fill_manual(name = "Subject type", values=c("forestgreen", "firebrick3", "steelblue"), labels = c("Healthy (39)", "Tubular adenoma (70)", "Serrated polyp (36)")) +
+  scale_fill_manual(name = "Subject type", values=c("forestgreen", "firebrick3", "steelblue"), labels = c("Polyp free (39)", "Tubular adenoma (70)", "Serrated polyp (36)")) +
   scale_x_discrete(labels = c("Aspirate (52)", "Brush (64)", "Lavage (31)")) +
   theme(axis.line = element_line(color = "black"), panel.background = element_blank(), 
         axis.text = element_text(color = "black", size = 12), axis.title = element_text(size = 12), title = element_text(size = 12))
@@ -244,7 +242,7 @@ ggplot(data = NMDS_points) +
   scale_shape_manual(values = c(21,22,24), name = "Sample type", labels = c("Aspirate (52)", "Brush (64)", "Lavage (31)")) +
   #stat_ellipse(linetype = 2, aes(group = LabDiagnosis), size = 1) +
   guides(color = F, fill = guide_legend(override.aes = list(shape = 21))) +
-  scale_fill_manual(name = "Subject type", values=c("forestgreen", "firebrick3", "steelblue3"), labels = c("Healthy (39)", "Tubular adenoma (71)", "Serrated polyp (37)")) +
+  scale_fill_manual(name = "Subject type", values=c("forestgreen", "firebrick3", "steelblue3"), labels = c("Polyp free (39)", "Tubular adenoma (71)", "Serrated polyp (37)")) +
   geom_text(label = NMDS_points$Patient, size = 3, color = "black")
 
 fig2b <- ggplot(data = NMDS_points) +
@@ -253,7 +251,7 @@ fig2b <- ggplot(data = NMDS_points) +
   geom_point(aes(pch = LabDiagnosis, fill = SampleType), size = 5, alpha = .5) + 
   labs(x= "MDS1", y = "MDS2") +
   scale_shape_manual(values = c(21,22,24), name = "Subject type", 
-                     labels = c("Healthy (39)", "Serrated polyp (37)", "Tubular adenoma (71)"),
+                     labels = c("Polyp free (39)", "Serrated polyp (37)", "Tubular adenoma (71)"),
                      limits = c("healthy", "serrated", "non-serrated")) +
   #stat_ellipse(linetype = 2, aes(group = LabDiagnosis), size = 1) +
   guides(color = F, fill = guide_legend(order = 1, override.aes = list(shape = 21))) +
@@ -262,8 +260,8 @@ fig2b <- ggplot(data = NMDS_points) +
   annotate("text", x = 1.5, y = -2.2, label = bquote("Stress ="~.(round(NMDS$stress, digits = 2))))
 fig2b
 
-ggsave("Figure_2a.svg", plot = plot_grid(fig2a, fig2b, ncol = 1, rel_heights = c(.35,.65)), 
-       device = "svg", units = "in", dpi = 300, height = 8, width = 7.5)
+ggsave("Figure_2a.svg", plot = plot_grid(fig2a, fig2b, nrow = 1, rel_widths = c(.35,.65), labels = c("A.", "B.")), 
+       device = "svg", units = "in", dpi = 300, height = 5, width = 11)
   
 #aspirate only
 ggplot(data = merged_asp_mds) +
@@ -322,7 +320,7 @@ fig2b1 <- ggplot(data = brush_alpha_div) +
   geom_point(aes(pch = ColonLocation), fill = "white", size = 6, alpha = .8) + 
   scale_shape_manual(values = c(21,22), name = "Colon location", labels = c("Left", "Right")) +
   guides(color = F, fill = guide_legend(override.aes = list(shape = 21))) +
-  scale_fill_manual(name = "Tissue type", values=c("forestgreen", "firebrick3"), labels = c("Healthy", "Polyp")) +
+  scale_fill_manual(name = "Tissue type", values=c("forestgreen", "firebrick3"), labels = c("Polyp free", "Polyp")) +
   geom_text(label = brush_test$Patient, size = 3, color = "black") +
   theme(axis.line = element_line(color = "black"), panel.background = element_blank(), axis.text.x = element_blank(), axis.ticks.x = element_blank(),
         axis.text = element_text(color = "black", size = 12), axis.title = element_text(size = 12), title = element_text(size = 12), legend.position = "none")
@@ -342,7 +340,7 @@ fig2b2 <- ggplot(data = brush_specno) +
   geom_point(aes(pch = ColonLocation), fill = "white", size = 6, alpha = .8) + 
   scale_shape_manual(values = c(21,22), name = "Colon location", labels = c("Left", "Right")) +
   guides(color = F, fill = guide_legend(override.aes = list(shape = 21))) +
-  scale_fill_manual(name = "Tissue type", values=c("forestgreen", "firebrick3"), labels = c("Healthy", "Polyp")) +
+  scale_fill_manual(name = "Tissue type", values=c("forestgreen", "firebrick3"), labels = c("Polyp free", "Polyp")) +
   geom_text(label = brush_test$Patient, size = 3, color = "black") +
   theme(axis.line = element_line(color = "black"), panel.background = element_blank(), axis.text.x = element_blank(), axis.ticks.x = element_blank(),
         axis.text = element_text(color = "black", size = 12), axis.title = element_text(size = 12), title = element_text(size = 12), legend.position = "none")
@@ -365,7 +363,7 @@ fig2c <- ggplot(data = brush_test) +
   labs(title = "") +
   scale_shape_manual(values = c(21,22), name = "Colon location", labels = c("Left", "Right")) +
   guides(color = F, fill = guide_legend(override.aes = list(shape = 21))) +
-  scale_fill_manual(name = "Tissue type", values=c("forestgreen", "firebrick3"), labels = c("Healthy", "Polyp")) +
+  scale_fill_manual(name = "Tissue type", values=c("forestgreen", "firebrick3"), labels = c("Polyp free", "Polyp")) +
   geom_text(label = brush_test$Patient, size = 4, color = "black") +
   annotate("text", x = 1.5, y = -1.2, label = bquote("Stress ="~.(round(brush_mds$stress, digits = 2))))
 fig2c
@@ -376,7 +374,6 @@ rared_OTU_brush2 <- merge(metadata, rared_OTU_brush, by = "row.names")
 rared_OTU_brush2$SampleSite <- as.character(rared_OTU_brush2$SampleSite)
 rared_OTU_brush2$SampleSite[!(rared_OTU_brush2$SampleSite == "healthy")] <- "polyp"
 
-#Not significant if you convert it to general polyp type either
 adonis(formula = rared_OTU_brush2[,15:ncol(rared_OTU_brush2)] ~ rared_OTU_brush2$ColonLocation + rared_OTU_brush2$LabDiagnosis / 
       as.character(rared_OTU_brush2$Patient) / as.character(rared_OTU_brush2$SampleSite), 
        data = rared_OTU_brush2[,15:ncol(rared_OTU_brush2)], method = "bray", permutations = 999)
@@ -452,65 +449,31 @@ blank <- ggplot(data = brush_test) +
 fig3a_c <- plot_grid(blank, fig2b, fig2c, rel_widths = c(1.75,2,2.75), nrow = 1)
 fig3 <- plot_grid(fig3a_c, genus_barplot, ncol = 1, rel_heights = c(.7,1))
 #ggsave("Figure_3.svg", device = "svg", dpi = 600, height = 8, width = 12)
-
-#TPL
-#df3 <- rbind(asp_R_OTU, asp_L_OTU)
-#df3 <- df3 %>% group_by(Patient) %>% filter(n()>1)
-#taylor_out = NULL
-  #for (i in df3$Patient) {
-  #  assign(paste0("OTU_table_", i), df3[df3$Patient == i,]) #will create lots of variables
-  #  log.m <- log(apply(get(paste0("OTU_table_", i))[,-(1:(1+ncol(metadata)))], 2, mean))
-  #  log.v <- log(apply(get(paste0("OTU_table_", i))[,-(1:(1+ncol(metadata)))], 2, var))
-  #  log.m <- log.m[is.finite(log.m)]
-  #  log.v <- log.v[is.finite(log.v)]
-  #  log.m_v <- merge(log.m, log.v, by = "row.names")
-  #  fit <- lm(log.m_v$y ~ log.m_v$x)
-  #  c.value <- as.numeric(coef(fit)[1]) #constant
-  #  z.value <- as.numeric(coef(fit)[2]) #var of interest, z > 1 = aggregated, z = 1 random, z < 1 uniform
-  #  individual <- i
-  #  individual <- cbind(individual, z.value)
-  #  taylor_out <- rbind(taylor_out, individual)
-  #}
-  
-  #taylor_out <- as.data.frame(unique(taylor_out))
-  #taylor_final <- merge(taylor_out, metadata, by.x = "individual", by.y = "Patient")
-  #taylor_final <- taylor_final[,c(1:2,11)]
-  #taylor_final <- unique(taylor_final)
-  
-  #ggplot(data = taylor_final) +
-  #  aes(x = taylor_final$LabDiagnosis, y = taylor_final$z.value, fill = taylor_final$LabDiagnosis) +
-  #  geom_boxplot(outlier.shape = NA, lwd = 1) +
-  #  theme_classic(base_size = 14, base_line_size = 1) +
-  #  labs(x = 'Subject status', y = 'Taylor`s exponent' , fill = 'Subject status', 
-  #       title = 'Proximal + distal') +
-  #  geom_point(position = position_jitterdodge(jitter.width = .5)) +
-  #  theme(legend.position = "none")
-  #TukeyHSD(aov(formula = taylor_final$z.value ~ taylor_final$LabDiagnosis))
   
 ###### F. nucleatum testing #########
-fuso_OTU <- as.data.frame(OTU_no_mock[(rownames(OTU_no_mock) %in% c("784613cec54042f06ac530324696f6bd", "3b9d5137ed8c9088b160e93286595664", "b44db83ce82cbbd0253f5b8131bf35a1",
+#fuso_OTU <- as.data.frame(OTU_no_mock[(rownames(OTU_no_mock) %in% c("784613cec54042f06ac530324696f6bd", "3b9d5137ed8c9088b160e93286595664", "b44db83ce82cbbd0253f5b8131bf35a1",
                                                              "57ca1171911f37a20631c6f0c04bd109", "ee74a96f7669f1a201ceb1705ec2fd5f")),])
-fuso_OTU <- as.data.frame(colSums(fuso_OTU))
-fuso_OTU <- (fuso_OTU/rd)
-fuso_OTU <- merge(fuso_OTU, metadata, by = "row.names")
+#fuso_OTU <- as.data.frame(colSums(fuso_OTU))
+#fuso_OTU <- (fuso_OTU/rd)
+#fuso_OTU <- merge(fuso_OTU, metadata, by = "row.names")
 
-ggplot(data = fuso_OTU) +
-  aes(x = as.character(fuso_OTU$SampleType), y = fuso_OTU$`colSums(fuso_OTU)`, fill = as.character(fuso_OTU$LabDiagnosis)) +
-  geom_boxplot(outlier.shape = NA, lwd = 1.2) +
-  theme_classic(base_size = 14, base_line_size = 1) +
-  geom_point(position = position_jitterdodge(jitter.width = .1)) +
-  labs(title =  expression(paste(italic("F. nucleatum"), " abundance"))
-       , x = "Sample Type", y = expression(paste("Relative abundance of ", italic("F. nucleatum"))), fill = 'Polyp pathology') 
+#ggplot(data = fuso_OTU) +
+#  aes(x = as.character(fuso_OTU$SampleType), y = fuso_OTU$`colSums(fuso_OTU)`, fill = as.character(fuso_OTU$LabDiagnosis)) +
+#  geom_boxplot(outlier.shape = NA, lwd = 1.2) +
+#  theme_classic(base_size = 14, base_line_size = 1) +
+#  geom_point(position = position_jitterdodge(jitter.width = .1)) +
+#  labs(title =  expression(paste(italic("F. nucleatum"), " abundance"))
+#       , x = "Sample Type", y = expression(paste("Relative abundance of ", italic("F. nucleatum"))), fill = 'Polyp pathology') 
 
 #No significant differences in fuso relative ab.
-kruskal.test(fuso_OTU$`colSums(fuso_OTU)` ~ fuso_OTU$LabDiagnosis)
+#kruskal.test(fuso_OTU$`colSums(fuso_OTU)` ~ fuso_OTU$LabDiagnosis)
 
-ggplot(data = fuso_OTU) +
-  aes(x = as.character(fuso_OTU$SampleSite), y = fuso_OTU$`colSums(fuso_OTU)`, fill = as.character(fuso_OTU$SampleSite)) +
-  geom_boxplot(outlier.shape = NA) +
-  geom_jitter(width = .1) +
-  labs(title = 'F. nucleatum abundance', subtitle = "No significant differences",
-       x = 'Sample Site', y = 'Number of F. nucleatum hits', fill = 'Tissue Site')
+#ggplot(data = fuso_OTU) +
+#  aes(x = as.character(fuso_OTU$SampleSite), y = fuso_OTU$`colSums(fuso_OTU)`, fill = as.character(fuso_OTU$SampleSite)) +
+#  geom_boxplot(outlier.shape = NA) +
+#  geom_jitter(width = .1) +
+#  labs(title = 'F. nucleatum abundance', subtitle = "No significant differences",
+#       x = 'Sample Site', y = 'Number of F. nucleatum hits', fill = 'Tissue Site')
 
 ###### Taxa plots ############
 taxofint <- as.data.frame(rared_OTU[, grep('lenta', colnames(rared_OTU))])
@@ -521,17 +484,18 @@ taxofint4 <- merge(taxofint3, metadata, by = "row.names")
 taxofint4 <- taxofint4[!grepl("unknown", taxofint4$LabDiagnosis),]
 
 ggplot(data = taxofint4[taxofint4$SampleType == "aspirate",]) +
-  aes(x = as.character(LabDiagnosis), y = `rowSums(taxofint)`) + #, fill = as.character(SampleType)) +
+  aes(x = as.character(LabDiagnosis), y = `rowSums(taxofint)`+0.0001, fill = as.character(LabDiagnosis)) +
   geom_boxplot(outlier.shape = NA, lwd = 1) +
   theme_classic(base_size = 14, base_line_size = 1) +
-  geom_jitter() +
+  geom_jitter(size = 2, alpha = .9) +
   labs(x = NULL, y = 'Relative abundance', fill = 'Subject type', title = "Eggerthella lenta") +
   #geom_point(position = position_jitterdodge(jitter.width = .1), alpha = 0.3) +
-  #scale_fill_manual(name = "Subject type", values=c("forestgreen", "firebrick3", "steelblue3"), labels = c("Healthy (39)", "Tubular adenoma (70)", "Serrated polyp (36)")) +
-  theme(plot.title = element_text(face = "italic")) +
-  scale_x_discrete(labels = c("Healthy", "TA", "Serrated")) +
+  scale_fill_manual(values=c("forestgreen", "firebrick3", "steelblue3")) +
+  theme(plot.title = element_text(face = "italic"), legend.position = "none") +
+  scale_x_discrete(labels = c("Polyp free (17)", "TA (24)", "Serrated (11)")) +
   scale_y_log10()
-  
+ggsave("16S_elenta.png", device = "png", dpi = 300, width = 4, height = 3)
+
 ###### Taxa barplots ####
 #Turn to relative abundance
 relab_table <- rared_OTU/rowSums(rared_OTU)
@@ -580,7 +544,7 @@ ggplot(data = barplot_df2) +
   geom_boxplot(outlier.shape = NA) +
   coord_flip() +
   theme_bw(base_size = 14, base_line_size = 1) +
-  scale_fill_manual(name = "Subject type", values=c("forestgreen", "firebrick3", "steelblue3"), labels = c("Healthy (44)", "Tubular adenoma (55)", "Serrated polyp (20)")) +
+  scale_fill_manual(name = "Subject type", values=c("forestgreen", "firebrick3", "steelblue3"), labels = c("Polyp free (44)", "Tubular adenoma (55)", "Serrated polyp (20)")) +
   geom_jitter(position = position_jitterdodge(), size = .5) +
   facet_wrap(~SampleType, labeller = labeller(SampleType = c(`aspirate` = "Aspirate (51)", `brush` = "Brush (37)", `lavage` = "Lavage (31)"))) +
   labs(y = "Relative Abundance", x = "Family", subtitle = bquote("Individuals:"~.(length(unique(barplot_df2$Patient))))) +
@@ -588,21 +552,6 @@ ggplot(data = barplot_df2) +
   scale_x_discrete(limits = rev(levels(barplot_df2$taxonomy)))
 
 #ggsave("Figure_2c.svg", plot = fig2c, device = "svg", units = "in", dpi = 300, height = 5, width = 15)
-
-###### Random forest ####
-#Dashes in the OTU number messing things up. Writing a csv and reading it fixes it in a lazy way.
-write.csv(merged_OTU_table, "Randomforest.csv", quote = F)
-
-Randomforest <- read.csv("Randomforest.csv")
-rf_OTU <- Randomforest[,16:ncol(Randomforest)]
-rf_OTU$metadata <- Randomforest$LabDiagnosis
-rf_out <- rfPermute(formula = metadata ~ ., data = rf_OTU, proximity = TRUE, importance = TRUE, nrep = 501, num.cores = 32)
-
-proximityPlot(rf_out)
-varImpPlot(rf_out, type = 1)
-plotConfMat(rf_out)
-impHeatmap(rf_out, alpha = 0.05, n = 20, ranks = F)
-plot(rf_out)
 
 ###### ANCOM ####
 
@@ -627,39 +576,42 @@ ancom_out <- ancom_res$out %>% filter(!(W == "Inf"), detected_0.7 == TRUE) %>% a
 View(ancom_out)  
 
 difab1 <- ggplot(data = merged_OTU_table[!merged_OTU_table$SampleType == "lavage",]) +
-  aes(x = SampleType, y = ((`k__Bacteria; p__Firmicutes; c__Bacilli; o__Gemellales; f__Gemellaceae`)/rd)*100) +
+  aes(x = SampleType, y = ((`k__Bacteria; p__Firmicutes; c__Bacilli; o__Gemellales; f__Gemellaceae`)/rd) + 0.0001) +
   geom_boxplot(outlier.shape = NA) +
   geom_jitter(alpha = .5, size = 1) +
-  labs(y = "Relative abundance %", title = "f__Gemellaceae") +
+  scale_x_discrete(label = c("Aspirate (52)", "Brush (64)")) +
+  labs(y = "Relative abundance", title = "f__Gemellaceae", x = NULL) +
   scale_y_log10() +
   theme_bw()
 
 #Very likely mitochondria
 difab2 <- ggplot(data = merged_OTU_table[!merged_OTU_table$SampleType == "lavage",]) +
-  aes(x = SampleType, y = ((`k__Bacteria; p__Proteobacteria; c__Alphaproteobacteria; o__Rickettsiales`)/rd)*100) +
+  aes(x = SampleType, y = ((`k__Bacteria; p__Proteobacteria; c__Alphaproteobacteria; o__Rickettsiales`)/rd)+0.0001) +
   geom_boxplot(outlier.shape = NA) +
   geom_jitter(alpha = .5, size = 1) +
-  labs(y = "Relative abundance %", title = "o__Rickettsiales") +
+  labs(y = "Relative abundance", title = "o__Rickettsiales", x = NULL) +
   scale_y_log10() +
+  scale_x_discrete(label = c("Aspirate (52)", "Brush (64)")) +
   theme_bw()
 
 difab3 <- ggplot(data = merged_OTU_table[!merged_OTU_table$SampleType == "lavage",]) +
-  aes(x = SampleType, y = ((`k__Bacteria; p__Firmicutes; c__Bacilli; o__Lactobacillales; f__Streptococcaceae; g__Streptococcus; s__.15`)/rd)*100) +
+  aes(x = SampleType, y = ((`k__Bacteria; p__Firmicutes; c__Bacilli; o__Lactobacillales; f__Streptococcaceae; g__Streptococcus; s__.15`)/rd)+0.0001) +
   geom_boxplot(outlier.shape = NA) +
+  scale_x_discrete(label = c("Aspirate (52)", "Brush (64)")) +
   geom_jitter(alpha = .5, size = 1) +
-  labs(y = "Relative abundance %", title = "g__Streptococcus; s__.15") +
+  labs(y = "Relative abundance", title = "g__Streptococcus; s__.15", x = NULL) +
   scale_y_log10() +
   theme_bw()
 
 difab4 <- ggplot(data = merged_OTU_table[!merged_OTU_table$SampleType == "lavage",]) +
-  aes(x = SampleType, y = ((`k__Bacteria; p__Firmicutes; c__Bacilli; o__Lactobacillales; f__Streptococcaceae; g__Streptococcus; s__`)/rd)*100) +
+  aes(x = SampleType, y = ((`k__Bacteria; p__Firmicutes; c__Bacilli; o__Lactobacillales; f__Streptococcaceae; g__Streptococcus; s__`)/rd)+0.0001) +
   geom_boxplot(outlier.shape = NA) +
   geom_jitter(alpha = .5, size = 1) +
-  labs(y = "Relative abundance %", title = "g__Streptococcus; s__") +
+  labs(y = "Relative abundance", title = "g__Streptococcus; s__", x = NULL) +
+  scale_x_discrete(label = c("Aspirate (52)", "Brush (64)")) +
   scale_y_log10() +
   theme_bw()
 
 difab <- plot_grid(difab1, difab2, difab3, difab4, ncol = 2, nrow = 2)
 
 ggsave("brush_v_aspirates.png", difab, device = "png", dpi = 300, width = 6, height = 4)
-  
