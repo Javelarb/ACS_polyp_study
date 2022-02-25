@@ -1,6 +1,7 @@
 # UCI ACS colorectal polyp study:
 
 This repository include the OTU table, metadata, and R scripts used to analyze 16S, ITS, and Shotgun data produced from the pilot polyp study.  
+
 Larger files like the functional gene table and gene annotations can be found here: https://datadryad.org/stash/share/ch1aXJPni5inrGM2IjyPELzALoxbbEvyqL-K2KL97sg  
 
 Also included are the bash scripts used to process the raw data.  

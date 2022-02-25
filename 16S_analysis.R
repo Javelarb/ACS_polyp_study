@@ -452,7 +452,7 @@ fig3 <- plot_grid(fig3a_c, genus_barplot, ncol = 1, rel_heights = c(.7,1))
   
 ###### F. nucleatum testing #########
 #fuso_OTU <- as.data.frame(OTU_no_mock[(rownames(OTU_no_mock) %in% c("784613cec54042f06ac530324696f6bd", "3b9d5137ed8c9088b160e93286595664", "b44db83ce82cbbd0253f5b8131bf35a1",
-                                                             "57ca1171911f37a20631c6f0c04bd109", "ee74a96f7669f1a201ceb1705ec2fd5f")),])
+#                                                             "57ca1171911f37a20631c6f0c04bd109", "ee74a96f7669f1a201ceb1705ec2fd5f")),])
 #fuso_OTU <- as.data.frame(colSums(fuso_OTU))
 #fuso_OTU <- (fuso_OTU/rd)
 #fuso_OTU <- merge(fuso_OTU, metadata, by = "row.names")
@@ -584,7 +584,7 @@ difab1 <- ggplot(data = merged_OTU_table[!merged_OTU_table$SampleType == "lavage
   scale_y_log10() +
   theme_bw()
 
-#Very likely mitochondria
+#Determined to be mitochondria by BLAST.
 difab2 <- ggplot(data = merged_OTU_table[!merged_OTU_table$SampleType == "lavage",]) +
   aes(x = SampleType, y = ((`k__Bacteria; p__Proteobacteria; c__Alphaproteobacteria; o__Rickettsiales`)/rd)+0.0001) +
   geom_boxplot(outlier.shape = NA) +
@@ -612,6 +612,6 @@ difab4 <- ggplot(data = merged_OTU_table[!merged_OTU_table$SampleType == "lavage
   scale_y_log10() +
   theme_bw()
 
-difab <- plot_grid(difab1, difab2, difab3, difab4, ncol = 2, nrow = 2)
+difab <- plot_grid(difab1, difab3, difab4, ncol = 3, nrow = 1)
 
-ggsave("brush_v_aspirates.png", difab, device = "png", dpi = 300, width = 6, height = 4)
+ggsave("brush_v_aspirates.png", difab, device = "png", dpi = 300, width = 9, height = 3)
