@@ -126,5 +126,5 @@ for i in QF_nonhuman_seqs/*.1.fastq.gz; do tmp=$(basename ${i} .1.fastq.gz); run
 for i in QF_nonhuman_seqs/*.1.fastq.gz; do tmp=$(basename ${i} .1.fastq.gz); echo -n "${tmp} "; awk 'FNR == 13 {print $2}' microbe_census/${tmp}.txt; done >> mic_cense_genome_equivs_merged.txt
 
 #Humann3
-
+while read i; do humann --input QF_nonhuman_seqs/${i}.merged.fastq.gz -o humann3/${i}.humann/ --threads 10; done < sample_manifest1.txt
 while read i; do humann_renorm_table -i humann3/${i}.humann/${i}.merged_pathabundance.tsv -o humann3/${i}.humann/${i}_RPK_pathabundance.tsv; done < sample_manifest.txt
