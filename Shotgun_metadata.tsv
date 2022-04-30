@@ -1,487 +1,487 @@
-SampleID	Patient	SampleLabel	SampleType	SampleSite	ColonLocation	Age	Gender	Ethnicity	BMI	MostMalignantPolypType	Plate	Sequencer	PrepType
-0001	1	001-B3R	brush	healthy	right	65	Female	White	36	healthy	1	Nextseq_2	Other_or_unknown
-0002	1	001-A3R	aspirate	healthy	right	65	Female	White	36	healthy	1	Nextseq_2	Other_or_unknown
-0005	1	001-B3L	brush	healthy	left	65	Female	White	36	healthy	1	Nextseq_2	Other_or_unknown
-0006	1	001-A3L	aspirate	healthy	left	65	Female	White	36	healthy	1	Nextseq_2	Other_or_unknown
-0009	1	001-A5	lavage	lavage	lavage	65	Female	White	36	healthy	1	Nextseq_2	Other_or_unknown
-0018	2	002-B3R	brush	healthy	right	41	Male	Black	31	healthy	1	Nextseq_2	Other_or_unknown
-0019	2	002-A3R	aspirate	healthy	right	41	Male	Black	31	healthy	1	Nextseq_2	Other_or_unknown
-0022	2	002-B3L	brush	healthy	left	41	Male	Black	31	healthy	1	Nextseq_2	Other_or_unknown
-0023	2	002-A3L	aspirate	healthy	left	41	Male	Black	31	healthy	1	Nextseq_2	Other_or_unknown
-0026	2	002-A5	lavage	lavage	lavage	41	Male	Black	31	healthy	1	Nextseq_2	Other_or_unknown
-0035	3	003-B3R	brush	healthy	right	59	Male	Hispanic	23	healthy	1	Nextseq_2	Other_or_unknown
-0036	3	003-A3R	aspirate	healthy	right	59	Male	Hispanic	23	healthy	1	Nextseq_2	Other_or_unknown
-0039	3	003-B3L	brush	healthy	left	59	Male	Hispanic	23	healthy	1	Nextseq_2	Other_or_unknown
-0040	3	003-A3L	aspirate	healthy	left	59	Male	Hispanic	23	healthy	1	Nextseq_2	Other_or_unknown
-0043	3	003-A5	lavage	lavage	lavage	59	Male	Hispanic	23	healthy	1	Nextseq_2	Other_or_unknown
-0054	4	004-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	healthy	4	Hiseq_1	Other_or_unknown
-0058	4	004-A3R	aspirate	healthy	right	unknown	unknown	unknown	unknown	healthy	4	Hiseq_1	Other_or_unknown
-0071	5	005-A3R	aspirate	healthy	right	63	Male	White	31	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0075	5	005-A3L	aspirate	healthy	left	63	Male	White	31	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0091	6	006-A3L	aspirate	healthy	left	68	Male	White	25	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0094	6	006-A5	lavage	lavage	lavage	68	Male	White	25	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0098	6	006-B2R	brush	healthy	right	68	Male	White	25	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0090	6	006-B3L	brush	healthy	left	68	Male	White	25	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0087	6	006-A3R	aspirate	healthy	right	68	Male	White	25	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0097	6	006-B1R	brush	SSP	right	68	Male	White	25	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0108	7	007-A3L	aspirate	healthy	left	51	Male	White	25	TA	1	Nextseq_2	Miralax_(or_generic)
-0111	7	007-A5	lavage	lavage	lavage	51	Male	White	25	TA	1	Nextseq_2	Miralax_(or_generic)
-0109	7	007-A3L	aspirate	healthy	left	51	Male	White	25	TA	4	Hiseq_1	Miralax_(or_generic)
-0104	7	007-A3R	aspirate	healthy	right	51	Male	White	25	TA	1	Nextseq_2	Miralax_(or_generic)
-0107	7	007-B3L	brush	healthy	left	51	Male	White	25	TA	1	Nextseq_2	Miralax_(or_generic)
-0115	7	007-B2R	brush	healthy	right	51	Male	White	25	TA	1	Nextseq_2	Miralax_(or_generic)
-0114	7	007-B1R	brush	TA	right	51	Male	White	25	TA	1	Nextseq_2	Miralax_(or_generic)
-0121	8	008-A3R	aspirate	healthy	right	61	Male	White	27	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0128	8	008-A5	lavage	lavage	lavage	61	Male	White	27	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0124	8	008-B3L	brush	healthy	left	61	Male	White	27	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0132	8	008-B2R	brush	healthy	right	61	Male	White	27	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0131	8	008-B1R	brush	TA	right	61	Male	White	27	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0125	8	008-A3L	aspirate	healthy	left	61	Male	White	27	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-P008F	8	P008F	fecal	fecal	fecal	61	Male	White	27	TA	6	Hiseq_1	fecal
-0142	9	009-A3L	aspirate	healthy	left	72	Male	White	34	healthy	1	Nextseq_2	Miralax_(or_generic)
-0138	9	009-A3R	aspirate	healthy	right	72	Male	White	34	healthy	1	Nextseq_2	Miralax_(or_generic)
-0149	9	009-B2L	brush	healthy	left	72	Male	White	34	healthy	1	Nextseq_2	Miralax_(or_generic)
-OLD-SAMPLE	9	009-A5	lavage	lavage	lavage	72	Male	White	34	healthy	6	Hiseq_1	Miralax_(or_generic)
-0137	9	009-B3R	brush	healthy	right	72	Male	White	34	healthy	1	Nextseq_2	Miralax_(or_generic)
-0145	9	009-A5	lavage	lavage	lavage	72	Male	White	34	healthy	1	Nextseq_2	Miralax_(or_generic)
-0172	10	010-A3R	aspirate	healthy	right	61	Male	White	37	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0159	10	010-A3L	aspirate	healthy	left	61	Male	White	37	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0177	11	011-A3L	aspirate	healthy	left	64	Male	White	26	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-P011F	11	P011F	fecal	fecal	fecal	64	Male	White	26	TA	6	Hiseq_1	fecal
-0179	11	011-A5	lavage	lavage	lavage	64	Male	White	26	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0192	12	012-B3L	brush	healthy	left	84	Male	White	22	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0200	12	012-B2R	brush	healthy	right	84	Male	White	22	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0193	12	012-A3L	aspirate	healthy	left	84	Male	White	22	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0189	12	012-A3R	aspirate	healthy	right	84	Male	White	22	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0199	12	012-B1R	brush	TA	right	84	Male	White	22	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0196	12	012-A5	lavage	lavage	lavage	84	Male	White	22	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0216	13	013-B1R	brush	HPP	right	69	Female	White	28	serrated	3	Nextseq_2	Miralax_(or_generic)
-0205	13	013-B3R	brush	healthy	right	69	Female	White	28	serrated	3	Nextseq_2	Miralax_(or_generic)
-0209	13	013-B3L	brush	healthy	left	69	Female	White	28	serrated	3	Nextseq_2	Miralax_(or_generic)
-0213	13	013-A5	lavage	lavage	lavage	69	Female	White	28	serrated	3	Nextseq_2	Miralax_(or_generic)
-P013F	13	P013F	fecal	fecal	fecal	69	Female	White	28	serrated	6	Hiseq_1	fecal
-0206	13	013-A3R	aspirate	healthy	right	69	Female	White	28	serrated	3	Nextseq_2	Miralax_(or_generic)
-0222	14	014-B3R	brush	healthy	right	53	Male	Asian	28	healthy	1	Nextseq_2	Other_or_unknown
-0227	14	014-A3L	aspirate	healthy	left	53	Male	Asian	28	healthy	1	Nextseq_2	Other_or_unknown
-0223	14	014-A3R	aspirate	healthy	right	53	Male	Asian	28	healthy	1	Nextseq_2	Other_or_unknown
-0226	14	014-B3L	brush	healthy	left	53	Male	Asian	28	healthy	1	Nextseq_2	Other_or_unknown
-0230	14	014-A5	lavage	lavage	lavage	53	Male	Asian	28	healthy	1	Nextseq_2	Other_or_unknown
-0237	14	014-A5-G	lavage	lavage	lavage	53	Male	Asian	28	healthy	1	Nextseq_2	Other_or_unknown
-0245	15	015-A3L	aspirate	healthy	left	71	Male	Asian	27	healthy	4	Hiseq_1	Miralax_(or_generic)
-0241	15	015-A3R	aspirate	healthy	right	71	Male	Asian	27	healthy	4	Hiseq_1	Miralax_(or_generic)
-0256	16	016-B3R	brush	healthy	right	58	Female	White	21	healthy	1	Nextseq_2	Other_or_unknown
-0260	16	016-B3L	brush	healthy	left	58	Female	White	21	healthy	1	Nextseq_2	Other_or_unknown
-0261	16	016-A3L	aspirate	healthy	left	58	Female	White	21	healthy	1	Nextseq_2	Other_or_unknown
-0264	16	016-A5	lavage	lavage	lavage	58	Female	White	21	healthy	1	Nextseq_2	Other_or_unknown
-0281	17	017-A5	lavage	lavage	lavage	66	Female	Asian	23	healthy	1	Nextseq_2	Other_or_unknown
-0273	17	017-B3R	brush	healthy	right	66	Female	Asian	23	healthy	1	Nextseq_2	Other_or_unknown
-0274	17	017-A3R	aspirate	healthy	right	66	Female	Asian	23	healthy	1	Nextseq_2	Other_or_unknown
-0277	17	017-B3L	brush	healthy	left	66	Female	Asian	23	healthy	1	Nextseq_2	Other_or_unknown
-0278	17	017-A3L	aspirate	healthy	left	66	Female	Asian	23	healthy	1	Nextseq_2	Other_or_unknown
-0295	18	018-A3L	aspirate	healthy	left	60	Female	White	39	healthy	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0291	18	018-A3R	aspirate	healthy	right	60	Female	White	39	healthy	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0294	18	018-B3L	brush	healthy	left	60	Female	White	39	healthy	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-P018F	18	P018F	fecal	fecal	fecal	60	Female	White	39	healthy	6	Hiseq_1	fecal
-0298	18	018-A5	lavage	lavage	lavage	60	Female	White	39	healthy	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0312	19	019-A3L	aspirate	healthy	left	55	Male	White	30	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0308	19	019-A3R	aspirate	healthy	right	55	Male	White	30	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0328	20	020-B3L	brush	healthy	left	54	Male	White	20	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0336	20	020-B2R	brush	healthy	right	54	Male	White	20	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0335	20	020-B1R	brush	SSP	right	54	Male	White	20	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0325	20	020-A3R	aspirate	healthy	right	54	Male	White	20	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0330	20	020-A3L	aspirate	healthy	left	54	Male	White	20	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0332	20	020-A5	lavage	lavage	lavage	54	Male	White	20	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0329	20	020-A3L	aspirate	healthy	left	54	Male	White	20	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0344	21	021-A3R	aspirate	healthy	right	33	Male	White	23	healthy	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0341	21	021-A3L	aspirate	healthy	left	33	Male	White	23	healthy	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0347	21	021-A5	lavage	lavage	lavage	33	Male	White	23	healthy	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0351	21	021-B2R	brush	healthy	right	33	Male	White	23	healthy	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-P021F	21	P021F	fecal	fecal	fecal	33	Male	White	23	healthy	6	Hiseq_1	fecal
-0353	22	022-A3L	aspirate	healthy	left	37	Female	White	29	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0364	22	022-B3L	brush	healthy	left	37	Female	White	29	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0354	22	022-A3L	aspirate	healthy	left	37	Female	White	29	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0362	22	022-B1R	brush	HPP	right	37	Female	White	29	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0356	22	022-A3R	aspirate	healthy	right	37	Female	White	29	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0363	22	022-B2R	brush	healthy	right	37	Female	White	29	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0359	22	022-A5	lavage	lavage	lavage	37	Female	White	29	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0371	23	023-A5	lavage	lavage	lavage	22	Male	White	21	healthy	1	Nextseq_2	Other_or_unknown
-0368	23	023-A3R	aspirate	healthy	right	22	Male	White	21	healthy	1	Nextseq_2	Other_or_unknown
-0374	23	023-B3R	brush	healthy	right	22	Male	White	21	healthy	1	Nextseq_2	Other_or_unknown
-0365	23	023-A3L	aspirate	healthy	left	22	Male	White	21	healthy	1	Nextseq_2	Other_or_unknown
-0375	23	023-B3L	brush	healthy	left	22	Male	White	21	healthy	1	Nextseq_2	Other_or_unknown
-0377	24	024-A3L	aspirate	healthy	left	73	Male	White	24	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0379	24	024-A3R	aspirate	healthy	right	73	Male	White	24	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-P025F	25	P025F	fecal	fecal	fecal	80	Female	White	27	unknown	6	Hiseq_1	fecal
-0395	25	025-A5	lavage	lavage	lavage	80	Female	White	27	unknown	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0388	25	025-A3L	aspirate	healthy	left	80	Female	White	27	unknown	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0392	25	025-A3R	aspirate	healthy	right	80	Female	White	27	unknown	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0400	26	026-A3L	aspirate	healthy	left	62	Female	Asian	22	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0406	26	026-A5	lavage	lavage	lavage	62	Female	Asian	22	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0411	26	026-B3L	brush	healthy	left	62	Female	Asian	22	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0410	26	026-B2R	brush	healthy	right	62	Female	Asian	22	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0403	26	026-A3R	aspirate	healthy	right	62	Female	Asian	22	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0409	26	026-B1R	brush	TA	right	62	Female	Asian	22	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0415	27	027-A3R	aspirate	healthy	right	73	Male	White	27	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0412	27	027-A3L	aspirate	healthy	left	73	Male	White	27	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0424	28	028-A3L	aspirate	healthy	left	80	Male	White	38	serrated	4	Hiseq_1	Other_or_unknown
-0428	28	028-A3R	aspirate	healthy	right	80	Male	White	38	serrated	4	Hiseq_1	Other_or_unknown
-0439	29	029-A3R	aspirate	healthy	right	68	Female	White	25	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0437	29	029-A3L	aspirate	healthy	left	68	Female	White	25	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0454	30	030-A5	lavage	lavage	lavage	80	Male	White	23	healthy	1	Nextseq_2	Other_or_unknown
-0457	30	030-B3R	brush	healthy	right	80	Male	White	23	healthy	1	Nextseq_2	Other_or_unknown
-0458	30	030-B3L	brush	healthy	left	80	Male	White	23	healthy	1	Nextseq_2	Other_or_unknown
-0448	30	030-A3L	aspirate	healthy	left	80	Male	White	23	healthy	1	Nextseq_2	Other_or_unknown
-0451	30	030-A3R	aspirate	healthy	right	80	Male	White	23	healthy	1	Nextseq_2	Other_or_unknown
-0470	31	031-B1R	brush	TA	right	62	Male	White	45	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0466	31	031-A5	lavage	lavage	lavage	62	Male	White	45	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0469	31	031-B3R	brush	healthy	right	62	Male	White	45	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0460	31	031-A3L	aspirate	healthy	left	62	Male	White	45	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0471	31	031-B3L	brush	healthy	left	62	Male	White	45	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0463	31	031-A3R	aspirate	healthy	right	62	Male	White	45	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0461	31	031-A3L	aspirate	healthy	left	62	Male	White	45	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0478	32	032-A5	lavage	lavage	lavage	27	Male	White	23	healthy	1	Nextseq_2	Other_or_unknown
-0482	32	032-B3L	brush	healthy	left	27	Male	White	23	healthy	1	Nextseq_2	Other_or_unknown
-0473	32	032-A3L	aspirate	healthy	left	27	Male	White	23	healthy	1	Nextseq_2	Other_or_unknown
-0475	32	032-A3R	aspirate	healthy	right	27	Male	White	23	healthy	1	Nextseq_2	Other_or_unknown
-P033F	33	P033F	fecal	fecal	fecal	79	Male	White	24	TA	6	Hiseq_1	fecal
-0494	33	033-B2R	brush	healthy	right	79	Male	White	24	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0487	33	033-A3R	aspirate	healthy	right	79	Male	White	24	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0491	33	033-A5	lavage	lavage	lavage	79	Male	White	24	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0495	33	033-B3L	brush	healthy	left	79	Male	White	24	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0493	33	033-B1R	brush	TA	right	79	Male	White	24	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0484	33	033-A3L	aspirate	healthy	left	79	Male	White	24	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0490	33	033-A5	lavage	lavage	lavage	79	Male	White	24	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0485	33	033-A3L	aspirate	healthy	left	79	Male	White	24	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0505	34	034-B1R	brush	HPP	right	56	Female	Asian	31	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-P034F	34	P034F	fecal	fecal	fecal	56	Female	Asian	31	serrated	6	Hiseq_1	fecal
-0502	34	034-A5	lavage	lavage	lavage	56	Female	Asian	31	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0499	34	034-A3R	aspirate	healthy	right	56	Female	Asian	31	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0497	34	034-A3L	aspirate	healthy	left	56	Female	Asian	31	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0506	34	034-B2R	brush	healthy	right	56	Female	Asian	31	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0496	34	034-A3L	aspirate	healthy	left	56	Female	Asian	31	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0507	34	034-B3L	brush	healthy	left	56	Female	Asian	31	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0518	35	035-B1R	brush	TA	right	58	Female	White	24	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0519	35	035-B3L	brush	healthy	left	58	Female	White	24	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0514	35	035-A5	lavage	lavage	lavage	58	Female	White	24	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0511	35	035-A3R	aspirate	healthy	right	58	Female	White	24	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0508	35	035-A3L	aspirate	healthy	left	58	Female	White	24	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0517	35	035-B3R	brush	healthy	right	58	Female	White	24	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0520	36	036-A3L	aspirate	healthy	left	76	Female	Hispanic	unknown	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0529	36	036-B1R	brush	TA	right	76	Female	Hispanic	unknown	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0530	36	036-B2R	brush	healthy	right	76	Female	Hispanic	unknown	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0526	36	036-A5	lavage	lavage	lavage	76	Female	Hispanic	unknown	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0531	36	036-B3L	brush	healthy	left	76	Female	Hispanic	unknown	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0523	36	036-A3R	aspirate	healthy	right	76	Female	Hispanic	unknown	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0532	37	037-A3L	aspirate	healthy	left	33	Male	White	23	healthy	4	Hiseq_1	Other_or_unknown
-0535	37	037-A3R	aspirate	healthy	right	33	Male	White	23	healthy	4	Hiseq_1	Other_or_unknown
-0547	38	038-A3R	aspirate	healthy	right	58	Male	Black	22	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0555	38	038-B3L	brush	healthy	left	58	Male	Black	22	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0553	38	038-B1R	brush	TA	right	58	Male	Black	22	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0550	38	038-A5	lavage	lavage	lavage	58	Male	Black	22	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0544	38	038-A3L	aspirate	healthy	left	58	Male	Black	22	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0554	38	038-B3R	brush	healthy	right	58	Male	Black	22	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0559	39	039-A3R	aspirate	healthy	right	63	Female	Asian	8	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0557	39	039-A3L	aspirate	healthy	left	63	Female	Asian	8	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0569	40	040-A3L	aspirate	healthy	left	58	Female	White	22	healthy	4	Hiseq_1	Other_or_unknown
-0571	40	040-A3R	aspirate	healthy	right	58	Female	White	22	healthy	4	Hiseq_1	Other_or_unknown
-P040F	40	P040F	fecal	fecal	fecal	58	Female	White	22	healthy	6	Hiseq_1	fecal
-0580	41	041-A3L	aspirate	healthy	left	60	Male	unknown	35	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0591	41	041-B1L	brush	TA	left	60	Male	unknown	35	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0590	41	041-B2R	brush	healthy	right	60	Male	unknown	35	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0583	41	041-A3R	aspirate	healthy	right	60	Male	unknown	35	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0586	41	041-A5	lavage	lavage	lavage	60	Male	unknown	35	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0589	41	041-B1R	brush	TA	right	60	Male	unknown	35	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0591-5	41	041-B2L	brush	healthy	left	60	Male	unknown	35	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0602	42	042-B2R	brush	healthy	right	70	Female	White	24	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-P042F	42	P042F	fecal	fecal	fecal	70	Female	White	24	serrated	6	Hiseq_1	fecal
-0603	42	042-B3L	brush	healthy	left	70	Female	White	24	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0601	42	042-B1R	brush	SSP	right	70	Female	White	24	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0595	42	042-A3R	aspirate	healthy	right	70	Female	White	24	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0599	42	042-A5	lavage	lavage	lavage	70	Female	White	24	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0592	42	042-A3L	aspirate	healthy	left	70	Female	White	24	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0607	43	043-A3R	aspirate	healthy	right	55	Female	Asian	29	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0613	43	043-B3R	brush	healthy	right	55	Female	Asian	29	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0610	43	043-A5	lavage	lavage	lavage	55	Female	Asian	29	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0604	43	043-A3L	aspirate	healthy	left	55	Female	Asian	29	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0614	43	043-B1L	brush	TA	left	55	Female	Asian	29	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0615	43	043-B2L	brush	healthy	left	55	Female	Asian	29	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0619	44	044-A3R	aspirate	healthy	right	73	Male	White	22	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0616	44	044-A3L	aspirate	healthy	left	73	Male	White	22	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0634	45	045-A5	lavage	lavage	lavage	73	Male	White	22	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0628	45	045-A3L	aspirate	healthy	left	73	Male	White	22	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0631	45	045-A3R	aspirate	healthy	right	73	Male	White	22	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0639-5	45	045-B2L	brush	healthy	left	73	Male	White	22	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0638	45	045-B2R	brush	healthy	right	73	Male	White	22	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0629	45	045-A3L	aspirate	healthy	left	73	Male	White	22	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0639	45	045-B1L	brush	TSA	left	73	Male	White	22	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0650	46	046-B2R	brush	healthy	right	67	Female	White	39	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0649	46	046-B1R	brush	TA	right	67	Female	White	39	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0640	46	046-A3L	aspirate	healthy	left	67	Female	White	39	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0651	46	046-B3L	brush	healthy	left	67	Female	White	39	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0643	46	046-A3R	aspirate	healthy	right	67	Female	White	39	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0646	46	046-A5	lavage	lavage	lavage	67	Female	White	39	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-P046F	46	P046F	fecal	fecal	fecal	67	Female	White	39	TA	6	Hiseq_1	fecal
-0661-5	47	047-B2R	brush	healthy	right	61	Female	White	21	serrated	3	Nextseq_2	Other_or_unknown
-0661	47	047-B1R	brush	HPP	right	61	Female	White	21	serrated	3	Nextseq_2	Other_or_unknown
-0662	47	047-B3L	brush	healthy	left	61	Female	White	21	serrated	3	Nextseq_2	Other_or_unknown
-0652	47	047-A3L	aspirate	healthy	left	61	Female	White	21	serrated	3	Nextseq_2	Other_or_unknown
-0658	47	047-A5	lavage	lavage	lavage	61	Female	White	21	serrated	3	Nextseq_2	Other_or_unknown
-0655	47	047-A3R	aspirate	healthy	right	61	Female	White	21	serrated	3	Nextseq_2	Other_or_unknown
-0673	48	048-B3R	brush	healthy	right	75	Female	Asian	21	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0673-5	48	048-B1R	brush	TA	right	75	Female	Asian	21	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0665	48	048-A3L	aspirate	healthy	left	75	Female	Asian	21	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0664	48	048-A3L	aspirate	healthy	left	75	Female	Asian	21	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0670	48	048-A5	lavage	lavage	lavage	75	Female	Asian	21	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0675	48	048-B3L	brush	healthy	left	75	Female	Asian	21	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0667	48	048-A3R	aspirate	healthy	right	75	Female	Asian	21	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-P048F	48	P048F	fecal	fecal	fecal	75	Female	Asian	21	TA	6	Hiseq_1	fecal
-0685	49	049-B1R	brush	TA	right	65	Female	Asian	27	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0685-5	49	049-B2R	brush	healthy	right	65	Female	Asian	27	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0686-5	49	049-B2L	brush	healthy	left	65	Female	Asian	27	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0686	49	049-B1L	brush	TA	left	65	Female	Asian	27	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0682	49	049-A5	lavage	lavage	lavage	65	Female	Asian	27	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0677	49	049-A3L	aspirate	healthy	left	65	Female	Asian	27	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0679	49	049-A3R	aspirate	healthy	right	65	Female	Asian	27	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0690	50	050-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	healthy	4	Hiseq_1	Other_or_unknown
-0693	50	050-A3R	aspirate	healthy	right	unknown	unknown	unknown	unknown	healthy	4	Hiseq_1	Other_or_unknown
-0701	51	051-A3L	aspirate	healthy	left	77	Male	White	25	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0704	51	051-A3R	aspirate	healthy	right	77	Male	White	25	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0716	52	052-A3R	aspirate	healthy	right	68	Male	White	22	TA	3	Nextseq_2	Miralax_(or_generic)
-0722	52	052-B1R	brush	TA	right	68	Male	White	22	TA	3	Nextseq_2	Miralax_(or_generic)
-0722-5	52	052-B2R	brush	healthy	right	68	Male	White	22	TA	3	Nextseq_2	Miralax_(or_generic)
-P052F	52	P052F	fecal	fecal	fecal	68	Male	White	22	TA	6	Hiseq_1	fecal
-0720	52	052-A5	lavage	lavage	lavage	68	Male	White	22	TA	4	Hiseq_1	Miralax_(or_generic)
-0719	52	052-A5	lavage	lavage	lavage	68	Male	White	22	TA	3	Nextseq_2	Miralax_(or_generic)
-0713	52	052-A3L	aspirate	healthy	left	68	Male	White	22	TA	3	Nextseq_2	Miralax_(or_generic)
-0725	53	053-A3L	aspirate	healthy	left	66	Female	White	36	adenocarcinoma	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0728	53	053-A3R	aspirate	healthy	right	66	Female	White	36	adenocarcinoma	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0737	54	054-A3L	aspirate	healthy	left	63	Male	White	26	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0740	54	054-A3R	aspirate	healthy	right	63	Male	White	26	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0753	55	055-A3R	aspirate	healthy	right	unknown	unknown	unknown	unknown	healthy	4	Hiseq_1	Other_or_unknown
-0750	55	055-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	healthy	4	Hiseq_1	Other_or_unknown
-0765	56	056-A3R	aspirate	healthy	right	52	Male	Hispanic	33	healthy	4	Hiseq_1	Other_or_unknown
-0761	56	056-A3L	aspirate	healthy	left	52	Male	Hispanic	33	healthy	4	Hiseq_1	Other_or_unknown
-0773	57	057-A3L	aspirate	healthy	left	55	Male	White	25	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0777	57	057-A3R	aspirate	healthy	right	55	Male	White	25	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-P058F	58	P058F	fecal	fecal	fecal	86	Female	Hispanic	21	TA	6	Hiseq_1	fecal
-0788	58	058-A3R	aspirate	healthy	right	86	Female	Hispanic	21	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0791	58	058-A5	lavage	lavage	lavage	86	Female	Hispanic	21	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0785	58	058-A3L	aspirate	healthy	left	86	Female	Hispanic	21	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0798	59	059-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	healthy	4	Hiseq_1	Other_or_unknown
-P060F	60	P060F	fecal	fecal	fecal	67	Male	White	25	healthy	6	Hiseq_1	fecal
-0812	60	060-A3R	aspirate	healthy	right	67	Male	White	25	healthy	4	Hiseq_1	Other_or_unknown
-0815	60	060-A5	lavage	lavage	lavage	67	Male	White	25	healthy	4	Hiseq_1	Other_or_unknown
-0809	60	060-A3L	aspirate	healthy	left	67	Male	White	25	healthy	4	Hiseq_1	Other_or_unknown
-0828	61	061-A5	lavage	lavage	lavage	62	Female	White	26	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-P061F	61	P061F	fecal	fecal	fecal	62	Female	White	26	serrated	6	Hiseq_1	fecal
-0825	61	061-A3R	aspirate	healthy	right	62	Female	White	26	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0834	62	062-A3L	aspirate	healthy	left	65	Female	Asian	23	serrated	4	Hiseq_1	Miralax_(or_generic)
-0837	62	062-A3R	aspirate	healthy	right	65	Female	Asian	23	serrated	4	Hiseq_1	Miralax_(or_generic)
-P062F	62	P062F	fecal	fecal	fecal	65	Female	Asian	23	serrated	6	Hiseq_1	fecal
-0846	63	063-A3R	aspirate	healthy	right	68	Female	White	30	healthy	4	Hiseq_1	Other_or_unknown
-0857	64	064-A3L	aspirate	healthy	left	32	Male	Hispanic	32	healthy	4	Hiseq_1	Other_or_unknown
-0859	64	064-A3R	aspirate	healthy	right	32	Male	Hispanic	32	healthy	4	Hiseq_1	Other_or_unknown
-0872	65	065-A3R	aspirate	healthy	right	67	Female	Asian	24	TA	4	Hiseq_1	Miralax_(or_generic)
-0875	65	065-A5	lavage	lavage	lavage	67	Female	Asian	24	TA	4	Hiseq_1	Miralax_(or_generic)
-0870	65	065-A3L	aspirate	healthy	left	67	Female	Asian	24	TA	4	Hiseq_1	Miralax_(or_generic)
-P065F	65	P065F	fecal	fecal	fecal	67	Female	Asian	24	TA	6	Hiseq_1	fecal
-0888	66	066-A5	lavage	lavage	lavage	51	Male	White	23	serrated	2	Nextseq_2	Miralax_(or_generic)
-0885	66	066-A3R	aspirate	healthy	right	51	Male	White	23	serrated	2	Nextseq_2	Miralax_(or_generic)
-0886	66	066-A3R	aspirate	healthy	right	51	Male	White	23	serrated	4	Hiseq_1	Miralax_(or_generic)
-0891	66	066-B3R	brush	healthy	right	51	Male	White	23	serrated	2	Nextseq_2	Miralax_(or_generic)
-0893	66	066-B3L	brush	healthy	left	51	Male	White	23	serrated	2	Nextseq_2	Miralax_(or_generic)
-0882	66	066-A3L	aspirate	healthy	left	51	Male	White	23	serrated	2	Nextseq_2	Miralax_(or_generic)
-0892	66	066-B1R	brush	SSP	right	51	Male	White	23	serrated	2	Nextseq_2	Miralax_(or_generic)
-0896	67	067-A3L	aspirate	healthy	left	unknown	Female	White	22	healthy	4	Hiseq_1	Other_or_unknown
-0899	67	067-A3R	aspirate	healthy	right	unknown	Female	White	22	healthy	4	Hiseq_1	Other_or_unknown
-0909	68	068-A3L	aspirate	healthy	left	65	Female	White	48	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0911	68	068-A3R	aspirate	healthy	right	65	Female	White	48	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0922	69	069-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	serrated	4	Hiseq_1	Other_or_unknown
-0925	69	069-A3R	aspirate	healthy	right	unknown	unknown	unknown	unknown	serrated	4	Hiseq_1	Other_or_unknown
-0938	70	070-A3R	aspirate	healthy	right	90	Female	White	32	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0935	70	070-A3L	aspirate	healthy	left	90	Female	White	32	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0953	71	071-A5	lavage	lavage	lavage	66	Male	White	24	healthy	4	Hiseq_1	Other_or_unknown
-0950	71	071-A3R	aspirate	healthy	right	66	Male	White	24	healthy	4	Hiseq_1	Other_or_unknown
-0948	71	071-A3L	aspirate	healthy	left	66	Male	White	24	healthy	4	Hiseq_1	Other_or_unknown
-P071F	71	P071F	fecal	fecal	fecal	66	Male	White	24	healthy	6	Hiseq_1	fecal
-0960	72	072-A3L	aspirate	healthy	left	68	Female	Asian	25	healthy	4	Hiseq_1	Other_or_unknown
-0963	72	072-A3R	aspirate	healthy	right	68	Female	Asian	25	healthy	4	Hiseq_1	Other_or_unknown
-0974	73	073-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	healthy	5	Hiseq_1	Other_or_unknown
-0976	73	073-A3R	aspirate	healthy	right	unknown	unknown	unknown	unknown	healthy	5	Hiseq_1	Other_or_unknown
-0990	74	074-A3R	aspirate	healthy	right	53	Male	White	30	unknown	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0987	74	074-A3L	aspirate	healthy	left	53	Male	White	30	unknown	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-0999	75	075-A3L	aspirate	healthy	left	55	Female	Hispanic	28	TA	5	Hiseq_1	Other_or_unknown
-1003	75	075-A3R	aspirate	healthy	right	55	Female	Hispanic	28	TA	5	Hiseq_1	Other_or_unknown
-P076F	76	P076F	fecal	fecal	fecal	54	Female	PI	27	TA	6	Hiseq_1	fecal
-1026	77	077-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	healthy	5	Hiseq_1	Other_or_unknown
-1029	77	077-A3R	aspirate	healthy	right	unknown	unknown	unknown	unknown	healthy	5	Hiseq_1	Other_or_unknown
-P077F	77	P077F	fecal	fecal	fecal	unknown	unknown	unknown	unknown	healthy	6	Hiseq_1	fecal
-1032	77	077-A5	lavage	lavage	lavage	unknown	unknown	unknown	unknown	healthy	5	Hiseq_1	Other_or_unknown
-1040	78	078-A3L	aspirate	healthy	left	49	Male	Asian	27	healthy	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1042	78	078-A3R	aspirate	healthy	right	49	Male	Asian	27	healthy	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-P078F	78	P078F	fecal	fecal	fecal	49	Male	Asian	27	healthy	6	Hiseq_1	fecal
-1045	78	078-A5	lavage	lavage	lavage	49	Male	Asian	27	healthy	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-P079F	79	P079F	fecal	fecal	fecal	67	Female	Hispanic	28	serrated	6	Hiseq_1	fecal
-1052	79	079-A3L	aspirate	healthy	left	67	Female	Hispanic	28	serrated	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1056	79	079-A3R	aspirate	healthy	right	67	Female	Hispanic	28	serrated	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-P080F	80	P080F	fecal	fecal	fecal	unknown	unknown	unknown	unknown	serrated	6	Hiseq_1	fecal
-1066	80	080-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	serrated	5	Hiseq_1	Other_or_unknown
-1068	80	080-A3R	aspirate	healthy	right	unknown	unknown	unknown	unknown	serrated	5	Hiseq_1	Other_or_unknown
-1071	80	080-A5	lavage	lavage	lavage	unknown	unknown	unknown	unknown	serrated	5	Hiseq_1	Other_or_unknown
-1079	81	081-A3L	aspirate	healthy	left	57	Male	Asian	23	TA	5	Hiseq_1	Miralax_(or_generic)
-1081	81	081-A3R	aspirate	healthy	right	57	Male	Asian	23	TA	5	Hiseq_1	Miralax_(or_generic)
-1102	82	082-B3L	brush	healthy	left	76	Male	Asian	29	TA	0	Nextseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1103	82	082-B1L	brush	TA	left	76	Male	Asian	29	TA	0	Nextseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-P082F	82	P082F	fecal	fecal	fecal	76	Male	Asian	29	TA	6	Hiseq_1	fecal
-1097	82	082-A5	lavage	lavage	lavage	76	Male	Asian	29	TA	0	Nextseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1091	82	082-A3L	aspirate	healthy	left	76	Male	Asian	29	TA	0	Nextseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1101	82	082-B1R	brush	TA	right	76	Male	Asian	29	TA	0	Nextseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1100	82	082-B3R	brush	healthy	right	76	Male	Asian	29	TA	0	Nextseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1099	82	082-A5-G	lavage	lavage	lavage	76	Male	Asian	29	TA	0	Nextseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1108	83	083-A3R	aspirate	healthy	right	44	Male	Asian	26	healthy	5	Hiseq_1	Other_or_unknown
-1104	83	083-A3L	aspirate	healthy	left	44	Male	Asian	26	healthy	5	Hiseq_1	Other_or_unknown
-1117	84	084-A3L	aspirate	healthy	left	59	Female	White	16	TA	5	Hiseq_1	Miralax_(or_generic)
-1120	84	084-A3R	aspirate	healthy	right	59	Female	White	16	TA	5	Hiseq_1	Miralax_(or_generic)
-1130	85	085-A3L	aspirate	healthy	left	67	Male	White	33	healthy	5	Hiseq_1	Other_or_unknown
-1134	85	085-A3R	aspirate	healthy	right	67	Male	White	33	healthy	5	Hiseq_1	Other_or_unknown
-1162	87	087-A5	lavage	lavage	lavage	71	Female	White	31	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1159	87	087-A3R	aspirate	healthy	right	71	Female	White	31	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-P087F	87	P087F	fecal	fecal	fecal	71	Female	White	31	TA	6	Hiseq_1	fecal
-1170	88	088-A3L	aspirate	healthy	left	57	Male	Asian	22	unknown	5	Hiseq_1	Other_or_unknown
-1173	88	088-A3R	aspirate	healthy	right	57	Male	Asian	22	unknown	5	Hiseq_1	Other_or_unknown
-1183	89	089-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	unknown	5	Hiseq_1	Other_or_unknown
-1186	89	089-A3R	aspirate	healthy	right	unknown	unknown	unknown	unknown	unknown	5	Hiseq_1	Other_or_unknown
-P089F	89	P089F	fecal	fecal	fecal	unknown	unknown	unknown	unknown	unknown	6	Hiseq_1	fecal
-P090F	90	P090F	fecal	fecal	fecal	66	Female	White	39	TA	6	Hiseq_1	fecal
-1211	91	091-A3R	aspirate	healthy	right	53	Male	White	33	serrated	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1209	91	091-A3L	aspirate	healthy	left	53	Male	White	33	serrated	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1224	92	092-A3R	aspirate	healthy	right	54	Female	Hispanic	27	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-P092F	92	P092F	fecal	fecal	fecal	54	Female	Hispanic	27	serrated	6	Hiseq_1	fecal
-1232	92	092-B3L	brush	healthy	left	54	Female	Hispanic	27	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1227	92	092-A5	lavage	lavage	lavage	54	Female	Hispanic	27	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1231	92	092-B1R	brush	SSP	right	54	Female	Hispanic	27	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1230	92	092-B3R	brush	healthy	right	54	Female	Hispanic	27	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1222	92	092-A3L	aspirate	healthy	left	54	Female	Hispanic	27	serrated	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1228	92	092-A5	lavage	lavage	lavage	54	Female	Hispanic	27	serrated	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1221	92	092-A3L	aspirate	healthy	left	54	Female	Hispanic	27	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1234	93	093-A3L	aspirate	healthy	left	31	Female	White	21	unknown	5	Hiseq_1	Other_or_unknown
-1237	93	093-A3R	aspirate	healthy	right	31	Female	White	21	unknown	5	Hiseq_1	Other_or_unknown
-1248	94	094-A3L	aspirate	healthy	left	65	Female	White	24	healthy	5	Hiseq_1	Other_or_unknown
-1250	94	094-A3R	aspirate	healthy	right	65	Female	White	24	healthy	5	Hiseq_1	Other_or_unknown
-1260	95	095-A3L	aspirate	healthy	left	68	Male	White	31	healthy	0	Nextseq_1	Other_or_unknown
-1263	95	095-A3R	aspirate	healthy	right	68	Male	White	31	healthy	0	Nextseq_1	Other_or_unknown
-1266	95	095-A5	lavage	lavage	lavage	68	Male	White	31	healthy	0	Nextseq_1	Other_or_unknown
-1271	95	095-B3L	brush	healthy	left	68	Male	White	31	healthy	0	Nextseq_1	Other_or_unknown
-1277	96	096-A3R	aspirate	healthy	right	53	Male	White	24	healthy	5	Hiseq_1	Other_or_unknown
-1274	96	096-A3L	aspirate	healthy	left	53	Male	White	24	healthy	5	Hiseq_1	Other_or_unknown
-1289	97	097-A3R	aspirate	healthy	right	64	Female	White	23	healthy	5	Hiseq_1	Other_or_unknown
-1287	97	097-A3L	aspirate	healthy	left	64	Female	White	23	healthy	5	Hiseq_1	Other_or_unknown
-1299	98	098-A3L	aspirate	healthy	left	69	Male	White	27	healthy	5	Hiseq_1	Other_or_unknown
-1302	98	098-A3R	aspirate	healthy	right	69	Male	White	27	healthy	5	Hiseq_1	Other_or_unknown
-1312	99	099-A3L	aspirate	healthy	left	57	Female	White	19	TA	5	Hiseq_1	Miralax_(or_generic)
-1318	99	099-A5	lavage	lavage	lavage	57	Female	White	19	TA	5	Hiseq_1	Miralax_(or_generic)
-1316	99	099-A3R	aspirate	healthy	right	57	Female	White	19	TA	5	Hiseq_1	Miralax_(or_generic)
-P099F	99	P099F	fecal	fecal	fecal	57	Female	White	19	TA	6	Hiseq_1	fecal
-1328	100	100-A3R	aspirate	healthy	right	22	Male	White	24	serrated	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1325	100	100-A3L	aspirate	healthy	left	22	Male	White	24	serrated	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1339	101	101-A3L	aspirate	healthy	left	83	Male	Hispanic	20	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1341	101	101-A3R	aspirate	healthy	right	83	Male	Hispanic	20	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1360	102	102-B3R	brush	healthy	right	68	Male	White	20	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1354	102	102-A3R	aspirate	healthy	right	68	Male	White	20	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1357	102	102-A5	lavage	lavage	lavage	68	Male	White	20	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1362	102	102-B3L	brush	healthy	left	68	Male	White	20	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1351	102	102-A3L	aspirate	healthy	left	68	Male	White	20	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1361	102	102-B1R	brush	SSP	right	68	Male	White	20	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1365	103	103-A3L	aspirate	healthy	left	56	Male	Black	25	serrated	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1367	103	103-A3R	aspirate	healthy	right	56	Male	Black	25	serrated	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1378	104	104-A3L	aspirate	healthy	left	33	Female	Asian	20	healthy	5	Hiseq_1	Other_or_unknown
-1380	104	104-A3R	aspirate	healthy	right	33	Female	Asian	20	healthy	5	Hiseq_1	Other_or_unknown
-1391	105	105-A3L	aspirate	healthy	left	52	Male	Hispanic	32	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1393	105	105-A3R	aspirate	healthy	right	52	Male	Hispanic	32	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1406	106	106-A3R	aspirate	healthy	right	65	Female	White	20	healthy	5	Hiseq_1	Other_or_unknown
-1403	106	106-A3L	aspirate	healthy	left	65	Female	White	20	healthy	5	Hiseq_1	Other_or_unknown
-1420	107	107-A3R	aspirate	healthy	right	65	Female	White	21	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1417	107	107-A3L	aspirate	healthy	left	65	Female	White	21	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1429	108	108-A3L	aspirate	healthy	left	66	Female	Black	26	healthy	5	Hiseq_1	Other_or_unknown
-1432	108	108-A3R	aspirate	healthy	right	66	Female	Black	26	healthy	5	Hiseq_1	Other_or_unknown
-1449	109	109-A5	lavage	lavage	lavage	73	Male	White	28	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1445	109	109-A3R	aspirate	healthy	right	73	Male	White	28	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-P109F	109	P109F	fecal	fecal	fecal	73	Male	White	28	TA	6	Hiseq_1	fecal
-1443	109	109-A3L	aspirate	healthy	left	73	Male	White	28	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1458	110	110-A3R	aspirate	healthy	right	54	Male	White	31	healthy	5	Hiseq_1	Other_or_unknown
-1455	110	110-A3L	aspirate	healthy	left	54	Male	White	31	healthy	5	Hiseq_1	Other_or_unknown
-1468	111	111-A3L	aspirate	healthy	left	53	Male	White	28	serrated	5	Hiseq_1	Miralax_(or_generic)
-1472	111	111-A3R	aspirate	healthy	right	53	Male	White	28	serrated	5	Hiseq_1	Miralax_(or_generic)
-1484	112	112-A3R	aspirate	healthy	right	71	Male	White	45	unknown	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1482	112	112-A3L	aspirate	healthy	left	71	Male	White	45	unknown	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1494	113	113-A3L	aspirate	healthy	left	51	Female	White	23	healthy	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1498	113	113-A3R	aspirate	healthy	right	51	Female	White	23	healthy	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1508	114	114-A3L	aspirate	healthy	left	52	Female	White	34	healthy	5	Hiseq_1	Other_or_unknown
-1510	114	114-A3R	aspirate	healthy	right	52	Female	White	34	healthy	5	Hiseq_1	Other_or_unknown
-1520	115	115-A3L	aspirate	healthy	left	70	Female	Hispanic	32	healthy	5	Hiseq_1	Other_or_unknown
-1524	115	115-A3R	aspirate	healthy	right	70	Female	Hispanic	32	healthy	5	Hiseq_1	Other_or_unknown
-1536	116	116-A3R	aspirate	healthy	right	64	Male	White	45	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1534	116	116-A3L	aspirate	healthy	left	64	Male	White	45	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1546	117	117-A3L	aspirate	healthy	left	55	Male	White	23	serrated	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1550	117	117-A3R	aspirate	healthy	right	55	Male	White	23	serrated	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1559	118	118-A3L	aspirate	healthy	left	52	Male	White	26	unknown	5	Hiseq_1	Other_or_unknown
-1561	118	118-A3R	aspirate	healthy	right	52	Male	White	26	unknown	5	Hiseq_1	Other_or_unknown
-1575	119	119-A3R	aspirate	healthy	right	67	Male	White	24	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1572	119	119-A3L	aspirate	healthy	left	67	Male	White	24	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1584	120	120-A3L	aspirate	healthy	left	66	Female	Hispanic	25	serrated	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1588	120	120-A3R	aspirate	healthy	right	66	Female	Hispanic	25	serrated	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1600	121	121-A3R	aspirate	healthy	right	32	Male	White	37	healthy	6	Hiseq_1	Other_or_unknown
-1597	121	121-A3L	aspirate	healthy	left	32	Male	White	37	healthy	6	Hiseq_1	Other_or_unknown
-1613	122	122-A3R	aspirate	healthy	right	68	Male	Asian	25	serrated	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1617	122	122-A5	lavage	lavage	lavage	68	Male	Asian	25	serrated	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1611	122	122-A3L	aspirate	healthy	left	68	Male	Asian	25	serrated	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-P122F	122	P122F	fecal	fecal	fecal	68	Male	Asian	25	serrated	6	Hiseq_1	fecal
-1623	123	123-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	unknown	6	Hiseq_1	Other_or_unknown
-1627	123	123-A3R	aspirate	healthy	right	unknown	unknown	unknown	unknown	unknown	6	Hiseq_1	Other_or_unknown
-1629	123	123-A5	lavage	lavage	lavage	unknown	unknown	unknown	unknown	unknown	6	Hiseq_1	Other_or_unknown
-P123F	123	P123F	fecal	fecal	fecal	unknown	unknown	unknown	unknown	unknown	6	Hiseq_1	fecal
-1639	124	124-A3R	aspirate	healthy	right	60	Male	White	28	serrated	6	Hiseq_1	Miralax_(or_generic)
-1637	124	124-A3L	aspirate	healthy	left	60	Male	White	28	serrated	6	Hiseq_1	Miralax_(or_generic)
-1652	125	125-A3R	aspirate	healthy	right	53	Female	White	36	TA	6	Hiseq_1	Miralax_(or_generic)
-1650	125	125-A3L	aspirate	healthy	left	53	Female	White	36	TA	6	Hiseq_1	Miralax_(or_generic)
-1663	126	126-A3L	aspirate	healthy	left	71	Female	Asian	27	healthy	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1666	126	126-A3R	aspirate	healthy	right	71	Female	Asian	27	healthy	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1679	127	127-A3R	aspirate	healthy	right	50	Male	Asian	23	TA	6	Hiseq_1	Miralax_(or_generic)
-1676	127	127-A3L	aspirate	healthy	left	50	Male	Asian	23	TA	6	Hiseq_1	Miralax_(or_generic)
-1691	128	128-A3R	aspirate	healthy	right	80	Female	Hispanic	27	TA	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1688	128	128-A3L	aspirate	healthy	left	80	Female	Hispanic	27	TA	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1695	128	128-A5	lavage	lavage	lavage	80	Female	Hispanic	27	TA	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1706	129	129-A3R	aspirate	healthy	right	69	Male	White	23	TA	6	Hiseq_1	Miralax_(or_generic)
-P129F	129	P129F	fecal	fecal	fecal	69	Male	White	23	TA	6	Hiseq_1	fecal
-1703	129	129-A3L	aspirate	healthy	left	69	Male	White	23	TA	6	Hiseq_1	Miralax_(or_generic)
-1717	130	130-A3L	aspirate	healthy	left	75	Male	Asian	25	healthy	6	Hiseq_1	Other_or_unknown
-1720	130	130-A3R	aspirate	healthy	right	75	Male	Asian	25	healthy	6	Hiseq_1	Other_or_unknown
-1734	131	131-A3R	aspirate	healthy	right	unknown	unknown	unknown	unknown	unknown	6	Hiseq_1	Other_or_unknown
-1732	131	131-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	unknown	6	Hiseq_1	Other_or_unknown
-1745	132	132-A3L	aspirate	healthy	left	64	Female	White	18	healthy	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-P132F	132	P132F	fecal	fecal	fecal	64	Female	White	18	healthy	6	Hiseq_1	fecal
-1748	132	132-A3R	aspirate	healthy	right	64	Female	White	18	healthy	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1758	133	133-A3L	aspirate	healthy	left	67	Male	White	21	TA	6	Hiseq_1	Miralax_(or_generic)
-1763	133	133-A5	lavage	lavage	lavage	67	Male	White	21	TA	6	Hiseq_1	Miralax_(or_generic)
-1760	133	133-A3R	aspirate	healthy	right	67	Male	White	21	TA	6	Hiseq_1	Miralax_(or_generic)
-P133F	133	P133F	fecal	fecal	fecal	67	Male	White	21	TA	6	Hiseq_1	fecal
-1774	134	134-A3R	aspirate	healthy	right	46	Male	Asian	32	serrated	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1771	134	134-A3L	aspirate	healthy	left	46	Male	Asian	32	serrated	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-P135F	135	P135F	fecal	fecal	fecal	61	Male	White	24	TA	6	Hiseq_1	fecal
-1787	135	135-A3R	aspirate	healthy	right	61	Male	White	24	TA	6	Hiseq_1	Other_or_unknown
-1789	135	135-A5	lavage	lavage	lavage	61	Male	White	24	TA	6	Hiseq_1	Other_or_unknown
-1783	135	135-A3L	aspirate	healthy	left	61	Male	White	24	TA	6	Hiseq_1	Other_or_unknown
-1800	136	136-A3R	aspirate	healthy	right	37	Female	White	19	healthy	6	Hiseq_1	Other_or_unknown
-1797	136	136-A3L	aspirate	healthy	left	37	Female	White	19	healthy	6	Hiseq_1	Other_or_unknown
-1810	137	137-A3L	aspirate	healthy	left	66	Male	Asian	31	TA	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1812	137	137-A3R	aspirate	healthy	right	66	Male	Asian	31	TA	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1826	138	138-A3R	aspirate	healthy	right	unknown	unknown	unknown	unknown	unknown	6	Hiseq_1	Other_or_unknown
-1822	138	138-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	unknown	6	Hiseq_1	Other_or_unknown
-1838	139	139-A3R	aspirate	healthy	right	unknown	unknown	unknown	unknown	healthy	6	Hiseq_1	Other_or_unknown
-1841	139	139-A5	lavage	lavage	lavage	unknown	unknown	unknown	unknown	healthy	6	Hiseq_1	Other_or_unknown
-1835	139	139-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	healthy	6	Hiseq_1	Other_or_unknown
-P139F	139	P139F	fecal	fecal	fecal	unknown	unknown	unknown	unknown	healthy	6	Hiseq_1	fecal
-1849	140	140-A3L	aspirate	healthy	left	55	Female	Asian	31	healthy	6	Hiseq_1	Other_or_unknown
-1851	140	140-A3R	aspirate	healthy	right	55	Female	Asian	31	healthy	6	Hiseq_1	Other_or_unknown
-1864	141	141-A3R	aspirate	healthy	right	69	Female	Asian	27	unknown	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
-1862	141	141-A3L	aspirate	healthy	left	69	Female	Asian	27	unknown	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)
+Patient	SampleLabel	SampleType	SampleSite	ColonLocation	Age	Gender	Ethnicity	BMI	MostMalignantPolypType	Plate	Sequencer	PrepType	InFinalAnalysis
+0001	1	001-B3R	brush	healthy	right	65	Female	White	36	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0002	1	001-A3R	aspirate	healthy	right	65	Female	White	36	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0005	1	001-B3L	brush	healthy	left	65	Female	White	36	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0006	1	001-A3L	aspirate	healthy	left	65	Female	White	36	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0009	1	001-A5	lavage	lavage	lavage	65	Female	White	36	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0018	2	002-B3R	brush	healthy	right	41	Male	Black	31	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0019	2	002-A3R	aspirate	healthy	right	41	Male	Black	31	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0022	2	002-B3L	brush	healthy	left	41	Male	Black	31	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0023	2	002-A3L	aspirate	healthy	left	41	Male	Black	31	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0026	2	002-A5	lavage	lavage	lavage	41	Male	Black	31	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0035	3	003-B3R	brush	healthy	right	59	Male	Hispanic	23	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0036	3	003-A3R	aspirate	healthy	right	59	Male	Hispanic	23	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0039	3	003-B3L	brush	healthy	left	59	Male	Hispanic	23	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0040	3	003-A3L	aspirate	healthy	left	59	Male	Hispanic	23	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0043	3	003-A5	lavage	lavage	lavage	59	Male	Hispanic	23	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0054	4	004-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	healthy	4	Hiseq_1	Other_or_unknown	TRUE
+0058	4	004-A3R	aspirate	healthy	right	unknown	unknown	unknown	unknown	healthy	4	Hiseq_1	Other_or_unknown	TRUE
+0071	5	005-A3R	aspirate	healthy	right	63	Male	White	31	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0075	5	005-A3L	aspirate	healthy	left	63	Male	White	31	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0091	6	006-A3L	aspirate	healthy	left	68	Male	White	25	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0094	6	006-A5	lavage	lavage	lavage	68	Male	White	25	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0098	6	006-B2R	brush	healthy	right	68	Male	White	25	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0090	6	006-B3L	brush	healthy	left	68	Male	White	25	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0087	6	006-A3R	aspirate	healthy	right	68	Male	White	25	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0097	6	006-B1R	brush	SSP	right	68	Male	White	25	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0108	7	007-A3L	aspirate	healthy	left	51	Male	White	25	TA	1	Nextseq_2	Miralax_(or_generic)	FALSE
+0111	7	007-A5	lavage	lavage	lavage	51	Male	White	25	TA	1	Nextseq_2	Miralax_(or_generic)	FALSE
+0109	7	007-A3L	aspirate	healthy	left	51	Male	White	25	TA	4	Hiseq_1	Miralax_(or_generic)	TRUE
+0104	7	007-A3R	aspirate	healthy	right	51	Male	White	25	TA	1	Nextseq_2	Miralax_(or_generic)	FALSE
+0107	7	007-B3L	brush	healthy	left	51	Male	White	25	TA	1	Nextseq_2	Miralax_(or_generic)	FALSE
+0115	7	007-B2R	brush	healthy	right	51	Male	White	25	TA	1	Nextseq_2	Miralax_(or_generic)	FALSE
+0114	7	007-B1R	brush	TA	right	51	Male	White	25	TA	1	Nextseq_2	Miralax_(or_generic)	FALSE
+0121	8	008-A3R	aspirate	healthy	right	61	Male	White	27	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0128	8	008-A5	lavage	lavage	lavage	61	Male	White	27	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0124	8	008-B3L	brush	healthy	left	61	Male	White	27	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0132	8	008-B2R	brush	healthy	right	61	Male	White	27	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0131	8	008-B1R	brush	TA	right	61	Male	White	27	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0125	8	008-A3L	aspirate	healthy	left	61	Male	White	27	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+P008F	8	P008F	fecal	fecal	fecal	61	Male	White	27	TA	6	Hiseq_1	fecal	TRUE
+0142	9	009-A3L	aspirate	healthy	left	72	Male	White	34	healthy	1	Nextseq_2	Miralax_(or_generic)	FALSE
+0138	9	009-A3R	aspirate	healthy	right	72	Male	White	34	healthy	1	Nextseq_2	Miralax_(or_generic)	FALSE
+0149	9	009-B2L	brush	healthy	left	72	Male	White	34	healthy	1	Nextseq_2	Miralax_(or_generic)	FALSE
+OLD-SAMPLE	9	009-A5	lavage	lavage	lavage	72	Male	White	34	healthy	6	Hiseq_1	Miralax_(or_generic)	TRUE
+0137	9	009-B3R	brush	healthy	right	72	Male	White	34	healthy	1	Nextseq_2	Miralax_(or_generic)	FALSE
+0145	9	009-A5	lavage	lavage	lavage	72	Male	White	34	healthy	1	Nextseq_2	Miralax_(or_generic)	FALSE
+0172	10	010-A3R	aspirate	healthy	right	61	Male	White	37	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0159	10	010-A3L	aspirate	healthy	left	61	Male	White	37	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0177	11	011-A3L	aspirate	healthy	left	64	Male	White	26	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+P011F	11	P011F	fecal	fecal	fecal	64	Male	White	26	TA	6	Hiseq_1	fecal	TRUE
+0179	11	011-A5	lavage	lavage	lavage	64	Male	White	26	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0192	12	012-B3L	brush	healthy	left	84	Male	White	22	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0200	12	012-B2R	brush	healthy	right	84	Male	White	22	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0193	12	012-A3L	aspirate	healthy	left	84	Male	White	22	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0189	12	012-A3R	aspirate	healthy	right	84	Male	White	22	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0199	12	012-B1R	brush	TA	right	84	Male	White	22	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0196	12	012-A5	lavage	lavage	lavage	84	Male	White	22	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0216	13	013-B1R	brush	HPP	right	69	Female	White	28	serrated	3	Nextseq_2	Miralax_(or_generic)	FALSE
+0205	13	013-B3R	brush	healthy	right	69	Female	White	28	serrated	3	Nextseq_2	Miralax_(or_generic)	FALSE
+0209	13	013-B3L	brush	healthy	left	69	Female	White	28	serrated	3	Nextseq_2	Miralax_(or_generic)	FALSE
+0213	13	013-A5	lavage	lavage	lavage	69	Female	White	28	serrated	3	Nextseq_2	Miralax_(or_generic)	FALSE
+P013F	13	P013F	fecal	fecal	fecal	69	Female	White	28	serrated	6	Hiseq_1	fecal	TRUE
+0206	13	013-A3R	aspirate	healthy	right	69	Female	White	28	serrated	3	Nextseq_2	Miralax_(or_generic)	FALSE
+0222	14	014-B3R	brush	healthy	right	53	Male	Asian	28	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0227	14	014-A3L	aspirate	healthy	left	53	Male	Asian	28	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0223	14	014-A3R	aspirate	healthy	right	53	Male	Asian	28	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0226	14	014-B3L	brush	healthy	left	53	Male	Asian	28	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0230	14	014-A5	lavage	lavage	lavage	53	Male	Asian	28	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0237	14	014-A5-G	lavage	lavage	lavage	53	Male	Asian	28	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0245	15	015-A3L	aspirate	healthy	left	71	Male	Asian	27	healthy	4	Hiseq_1	Miralax_(or_generic)	TRUE
+0241	15	015-A3R	aspirate	healthy	right	71	Male	Asian	27	healthy	4	Hiseq_1	Miralax_(or_generic)	TRUE
+0256	16	016-B3R	brush	healthy	right	58	Female	White	21	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0260	16	016-B3L	brush	healthy	left	58	Female	White	21	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0261	16	016-A3L	aspirate	healthy	left	58	Female	White	21	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0264	16	016-A5	lavage	lavage	lavage	58	Female	White	21	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0281	17	017-A5	lavage	lavage	lavage	66	Female	Asian	23	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0273	17	017-B3R	brush	healthy	right	66	Female	Asian	23	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0274	17	017-A3R	aspirate	healthy	right	66	Female	Asian	23	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0277	17	017-B3L	brush	healthy	left	66	Female	Asian	23	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0278	17	017-A3L	aspirate	healthy	left	66	Female	Asian	23	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0295	18	018-A3L	aspirate	healthy	left	60	Female	White	39	healthy	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0291	18	018-A3R	aspirate	healthy	right	60	Female	White	39	healthy	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0294	18	018-B3L	brush	healthy	left	60	Female	White	39	healthy	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+P018F	18	P018F	fecal	fecal	fecal	60	Female	White	39	healthy	6	Hiseq_1	fecal	TRUE
+0298	18	018-A5	lavage	lavage	lavage	60	Female	White	39	healthy	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0312	19	019-A3L	aspirate	healthy	left	55	Male	White	30	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0308	19	019-A3R	aspirate	healthy	right	55	Male	White	30	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0328	20	020-B3L	brush	healthy	left	54	Male	White	20	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0336	20	020-B2R	brush	healthy	right	54	Male	White	20	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0335	20	020-B1R	brush	SSP	right	54	Male	White	20	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0325	20	020-A3R	aspirate	healthy	right	54	Male	White	20	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0330	20	020-A3L	aspirate	healthy	left	54	Male	White	20	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0332	20	020-A5	lavage	lavage	lavage	54	Male	White	20	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0329	20	020-A3L	aspirate	healthy	left	54	Male	White	20	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0344	21	021-A3R	aspirate	healthy	right	33	Male	White	23	healthy	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0341	21	021-A3L	aspirate	healthy	left	33	Male	White	23	healthy	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0347	21	021-A5	lavage	lavage	lavage	33	Male	White	23	healthy	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0351	21	021-B2R	brush	healthy	right	33	Male	White	23	healthy	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+P021F	21	P021F	fecal	fecal	fecal	33	Male	White	23	healthy	6	Hiseq_1	fecal	TRUE
+0353	22	022-A3L	aspirate	healthy	left	37	Female	White	29	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0364	22	022-B3L	brush	healthy	left	37	Female	White	29	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0354	22	022-A3L	aspirate	healthy	left	37	Female	White	29	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0362	22	022-B1R	brush	HPP	right	37	Female	White	29	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0356	22	022-A3R	aspirate	healthy	right	37	Female	White	29	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0363	22	022-B2R	brush	healthy	right	37	Female	White	29	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0359	22	022-A5	lavage	lavage	lavage	37	Female	White	29	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0371	23	023-A5	lavage	lavage	lavage	22	Male	White	21	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0368	23	023-A3R	aspirate	healthy	right	22	Male	White	21	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0374	23	023-B3R	brush	healthy	right	22	Male	White	21	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0365	23	023-A3L	aspirate	healthy	left	22	Male	White	21	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0375	23	023-B3L	brush	healthy	left	22	Male	White	21	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0377	24	024-A3L	aspirate	healthy	left	73	Male	White	24	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0379	24	024-A3R	aspirate	healthy	right	73	Male	White	24	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+P025F	25	P025F	fecal	fecal	fecal	80	Female	White	27	unknown	6	Hiseq_1	fecal	FALSE
+0395	25	025-A5	lavage	lavage	lavage	80	Female	White	27	unknown	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0388	25	025-A3L	aspirate	healthy	left	80	Female	White	27	unknown	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0392	25	025-A3R	aspirate	healthy	right	80	Female	White	27	unknown	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0400	26	026-A3L	aspirate	healthy	left	62	Female	Asian	22	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0406	26	026-A5	lavage	lavage	lavage	62	Female	Asian	22	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0411	26	026-B3L	brush	healthy	left	62	Female	Asian	22	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0410	26	026-B2R	brush	healthy	right	62	Female	Asian	22	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0403	26	026-A3R	aspirate	healthy	right	62	Female	Asian	22	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0409	26	026-B1R	brush	TA	right	62	Female	Asian	22	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0415	27	027-A3R	aspirate	healthy	right	73	Male	White	27	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0412	27	027-A3L	aspirate	healthy	left	73	Male	White	27	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0424	28	028-A3L	aspirate	healthy	left	80	Male	White	38	serrated	4	Hiseq_1	Other_or_unknown	TRUE
+0428	28	028-A3R	aspirate	healthy	right	80	Male	White	38	serrated	4	Hiseq_1	Other_or_unknown	TRUE
+0439	29	029-A3R	aspirate	healthy	right	68	Female	White	25	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0437	29	029-A3L	aspirate	healthy	left	68	Female	White	25	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0454	30	030-A5	lavage	lavage	lavage	80	Male	White	23	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0457	30	030-B3R	brush	healthy	right	80	Male	White	23	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0458	30	030-B3L	brush	healthy	left	80	Male	White	23	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0448	30	030-A3L	aspirate	healthy	left	80	Male	White	23	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0451	30	030-A3R	aspirate	healthy	right	80	Male	White	23	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0470	31	031-B1R	brush	TA	right	62	Male	White	45	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0466	31	031-A5	lavage	lavage	lavage	62	Male	White	45	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0469	31	031-B3R	brush	healthy	right	62	Male	White	45	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0460	31	031-A3L	aspirate	healthy	left	62	Male	White	45	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0471	31	031-B3L	brush	healthy	left	62	Male	White	45	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0463	31	031-A3R	aspirate	healthy	right	62	Male	White	45	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0461	31	031-A3L	aspirate	healthy	left	62	Male	White	45	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0478	32	032-A5	lavage	lavage	lavage	27	Male	White	23	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0482	32	032-B3L	brush	healthy	left	27	Male	White	23	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0473	32	032-A3L	aspirate	healthy	left	27	Male	White	23	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+0475	32	032-A3R	aspirate	healthy	right	27	Male	White	23	healthy	1	Nextseq_2	Other_or_unknown	FALSE
+P033F	33	P033F	fecal	fecal	fecal	79	Male	White	24	TA	6	Hiseq_1	fecal	TRUE
+0494	33	033-B2R	brush	healthy	right	79	Male	White	24	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0487	33	033-A3R	aspirate	healthy	right	79	Male	White	24	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0491	33	033-A5	lavage	lavage	lavage	79	Male	White	24	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0495	33	033-B3L	brush	healthy	left	79	Male	White	24	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0493	33	033-B1R	brush	TA	right	79	Male	White	24	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0484	33	033-A3L	aspirate	healthy	left	79	Male	White	24	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0490	33	033-A5	lavage	lavage	lavage	79	Male	White	24	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0485	33	033-A3L	aspirate	healthy	left	79	Male	White	24	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0505	34	034-B1R	brush	HPP	right	56	Female	Asian	31	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+P034F	34	P034F	fecal	fecal	fecal	56	Female	Asian	31	serrated	6	Hiseq_1	fecal	TRUE
+0502	34	034-A5	lavage	lavage	lavage	56	Female	Asian	31	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0499	34	034-A3R	aspirate	healthy	right	56	Female	Asian	31	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0497	34	034-A3L	aspirate	healthy	left	56	Female	Asian	31	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0506	34	034-B2R	brush	healthy	right	56	Female	Asian	31	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0496	34	034-A3L	aspirate	healthy	left	56	Female	Asian	31	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0507	34	034-B3L	brush	healthy	left	56	Female	Asian	31	serrated	3	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0518	35	035-B1R	brush	TA	right	58	Female	White	24	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0519	35	035-B3L	brush	healthy	left	58	Female	White	24	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0514	35	035-A5	lavage	lavage	lavage	58	Female	White	24	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0511	35	035-A3R	aspirate	healthy	right	58	Female	White	24	TA	1	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0508	35	035-A3L	aspirate	healthy	left	58	Female	White	24	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0517	35	035-B3R	brush	healthy	right	58	Female	White	24	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0520	36	036-A3L	aspirate	healthy	left	76	Female	Hispanic	unknown	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0529	36	036-B1R	brush	TA	right	76	Female	Hispanic	unknown	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0530	36	036-B2R	brush	healthy	right	76	Female	Hispanic	unknown	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0526	36	036-A5	lavage	lavage	lavage	76	Female	Hispanic	unknown	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0531	36	036-B3L	brush	healthy	left	76	Female	Hispanic	unknown	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0523	36	036-A3R	aspirate	healthy	right	76	Female	Hispanic	unknown	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0532	37	037-A3L	aspirate	healthy	left	33	Male	White	23	healthy	4	Hiseq_1	Other_or_unknown	TRUE
+0535	37	037-A3R	aspirate	healthy	right	33	Male	White	23	healthy	4	Hiseq_1	Other_or_unknown	TRUE
+0547	38	038-A3R	aspirate	healthy	right	58	Male	Black	22	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0555	38	038-B3L	brush	healthy	left	58	Male	Black	22	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0553	38	038-B1R	brush	TA	right	58	Male	Black	22	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0550	38	038-A5	lavage	lavage	lavage	58	Male	Black	22	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0544	38	038-A3L	aspirate	healthy	left	58	Male	Black	22	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0554	38	038-B3R	brush	healthy	right	58	Male	Black	22	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0559	39	039-A3R	aspirate	healthy	right	63	Female	Asian	8	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0557	39	039-A3L	aspirate	healthy	left	63	Female	Asian	8	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0569	40	040-A3L	aspirate	healthy	left	58	Female	White	22	healthy	4	Hiseq_1	Other_or_unknown	TRUE
+0571	40	040-A3R	aspirate	healthy	right	58	Female	White	22	healthy	4	Hiseq_1	Other_or_unknown	TRUE
+P040F	40	P040F	fecal	fecal	fecal	58	Female	White	22	healthy	6	Hiseq_1	fecal	TRUE
+0580	41	041-A3L	aspirate	healthy	left	60	Male	unknown	35	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0591	41	041-B1L	brush	TA	left	60	Male	unknown	35	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0590	41	041-B2R	brush	healthy	right	60	Male	unknown	35	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0583	41	041-A3R	aspirate	healthy	right	60	Male	unknown	35	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0586	41	041-A5	lavage	lavage	lavage	60	Male	unknown	35	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0589	41	041-B1R	brush	TA	right	60	Male	unknown	35	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0591-5	41	041-B2L	brush	healthy	left	60	Male	unknown	35	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0602	42	042-B2R	brush	healthy	right	70	Female	White	24	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+P042F	42	P042F	fecal	fecal	fecal	70	Female	White	24	serrated	6	Hiseq_1	fecal	TRUE
+0603	42	042-B3L	brush	healthy	left	70	Female	White	24	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0601	42	042-B1R	brush	SSP	right	70	Female	White	24	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0595	42	042-A3R	aspirate	healthy	right	70	Female	White	24	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0599	42	042-A5	lavage	lavage	lavage	70	Female	White	24	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0592	42	042-A3L	aspirate	healthy	left	70	Female	White	24	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0607	43	043-A3R	aspirate	healthy	right	55	Female	Asian	29	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0613	43	043-B3R	brush	healthy	right	55	Female	Asian	29	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0610	43	043-A5	lavage	lavage	lavage	55	Female	Asian	29	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0604	43	043-A3L	aspirate	healthy	left	55	Female	Asian	29	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0614	43	043-B1L	brush	TA	left	55	Female	Asian	29	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0615	43	043-B2L	brush	healthy	left	55	Female	Asian	29	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0619	44	044-A3R	aspirate	healthy	right	73	Male	White	22	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0616	44	044-A3L	aspirate	healthy	left	73	Male	White	22	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0634	45	045-A5	lavage	lavage	lavage	73	Male	White	22	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0628	45	045-A3L	aspirate	healthy	left	73	Male	White	22	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0631	45	045-A3R	aspirate	healthy	right	73	Male	White	22	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0639-5	45	045-B2L	brush	healthy	left	73	Male	White	22	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0638	45	045-B2R	brush	healthy	right	73	Male	White	22	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0629	45	045-A3L	aspirate	healthy	left	73	Male	White	22	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0639	45	045-B1L	brush	TSA	left	73	Male	White	22	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0650	46	046-B2R	brush	healthy	right	67	Female	White	39	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0649	46	046-B1R	brush	TA	right	67	Female	White	39	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0640	46	046-A3L	aspirate	healthy	left	67	Female	White	39	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0651	46	046-B3L	brush	healthy	left	67	Female	White	39	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0643	46	046-A3R	aspirate	healthy	right	67	Female	White	39	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0646	46	046-A5	lavage	lavage	lavage	67	Female	White	39	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+P046F	46	P046F	fecal	fecal	fecal	67	Female	White	39	TA	6	Hiseq_1	fecal	TRUE
+0661-5	47	047-B2R	brush	healthy	right	61	Female	White	21	serrated	3	Nextseq_2	Other_or_unknown	FALSE
+0661	47	047-B1R	brush	HPP	right	61	Female	White	21	serrated	3	Nextseq_2	Other_or_unknown	FALSE
+0662	47	047-B3L	brush	healthy	left	61	Female	White	21	serrated	3	Nextseq_2	Other_or_unknown	FALSE
+0652	47	047-A3L	aspirate	healthy	left	61	Female	White	21	serrated	3	Nextseq_2	Other_or_unknown	FALSE
+0658	47	047-A5	lavage	lavage	lavage	61	Female	White	21	serrated	3	Nextseq_2	Other_or_unknown	FALSE
+0655	47	047-A3R	aspirate	healthy	right	61	Female	White	21	serrated	3	Nextseq_2	Other_or_unknown	FALSE
+0673	48	048-B3R	brush	healthy	right	75	Female	Asian	21	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0673-5	48	048-B1R	brush	TA	right	75	Female	Asian	21	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0665	48	048-A3L	aspirate	healthy	left	75	Female	Asian	21	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0664	48	048-A3L	aspirate	healthy	left	75	Female	Asian	21	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0670	48	048-A5	lavage	lavage	lavage	75	Female	Asian	21	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0675	48	048-B3L	brush	healthy	left	75	Female	Asian	21	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0667	48	048-A3R	aspirate	healthy	right	75	Female	Asian	21	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+P048F	48	P048F	fecal	fecal	fecal	75	Female	Asian	21	TA	6	Hiseq_1	fecal	TRUE
+0685	49	049-B1R	brush	TA	right	65	Female	Asian	27	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0685-5	49	049-B2R	brush	healthy	right	65	Female	Asian	27	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0686-5	49	049-B2L	brush	healthy	left	65	Female	Asian	27	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0686	49	049-B1L	brush	TA	left	65	Female	Asian	27	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0682	49	049-A5	lavage	lavage	lavage	65	Female	Asian	27	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0677	49	049-A3L	aspirate	healthy	left	65	Female	Asian	27	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0679	49	049-A3R	aspirate	healthy	right	65	Female	Asian	27	TA	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0690	50	050-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	healthy	4	Hiseq_1	Other_or_unknown	TRUE
+0693	50	050-A3R	aspirate	healthy	right	unknown	unknown	unknown	unknown	healthy	4	Hiseq_1	Other_or_unknown	TRUE
+0701	51	051-A3L	aspirate	healthy	left	77	Male	White	25	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0704	51	051-A3R	aspirate	healthy	right	77	Male	White	25	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0716	52	052-A3R	aspirate	healthy	right	68	Male	White	22	TA	3	Nextseq_2	Miralax_(or_generic)	FALSE
+0722	52	052-B1R	brush	TA	right	68	Male	White	22	TA	3	Nextseq_2	Miralax_(or_generic)	FALSE
+0722-5	52	052-B2R	brush	healthy	right	68	Male	White	22	TA	3	Nextseq_2	Miralax_(or_generic)	FALSE
+P052F	52	P052F	fecal	fecal	fecal	68	Male	White	22	TA	6	Hiseq_1	fecal	TRUE
+0720	52	052-A5	lavage	lavage	lavage	68	Male	White	22	TA	4	Hiseq_1	Miralax_(or_generic)	TRUE
+0719	52	052-A5	lavage	lavage	lavage	68	Male	White	22	TA	3	Nextseq_2	Miralax_(or_generic)	FALSE
+0713	52	052-A3L	aspirate	healthy	left	68	Male	White	22	TA	3	Nextseq_2	Miralax_(or_generic)	FALSE
+0725	53	053-A3L	aspirate	healthy	left	66	Female	White	36	adenocarcinoma	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0728	53	053-A3R	aspirate	healthy	right	66	Female	White	36	adenocarcinoma	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0737	54	054-A3L	aspirate	healthy	left	63	Male	White	26	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0740	54	054-A3R	aspirate	healthy	right	63	Male	White	26	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0753	55	055-A3R	aspirate	healthy	right	unknown	unknown	unknown	unknown	healthy	4	Hiseq_1	Other_or_unknown	TRUE
+0750	55	055-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	healthy	4	Hiseq_1	Other_or_unknown	TRUE
+0765	56	056-A3R	aspirate	healthy	right	52	Male	Hispanic	33	healthy	4	Hiseq_1	Other_or_unknown	TRUE
+0761	56	056-A3L	aspirate	healthy	left	52	Male	Hispanic	33	healthy	4	Hiseq_1	Other_or_unknown	TRUE
+0773	57	057-A3L	aspirate	healthy	left	55	Male	White	25	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0777	57	057-A3R	aspirate	healthy	right	55	Male	White	25	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+P058F	58	P058F	fecal	fecal	fecal	86	Female	Hispanic	21	TA	6	Hiseq_1	fecal	TRUE
+0788	58	058-A3R	aspirate	healthy	right	86	Female	Hispanic	21	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0791	58	058-A5	lavage	lavage	lavage	86	Female	Hispanic	21	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0785	58	058-A3L	aspirate	healthy	left	86	Female	Hispanic	21	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0798	59	059-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	healthy	4	Hiseq_1	Other_or_unknown	FALSE
+P060F	60	P060F	fecal	fecal	fecal	67	Male	White	25	healthy	6	Hiseq_1	fecal	TRUE
+0812	60	060-A3R	aspirate	healthy	right	67	Male	White	25	healthy	4	Hiseq_1	Other_or_unknown	TRUE
+0815	60	060-A5	lavage	lavage	lavage	67	Male	White	25	healthy	4	Hiseq_1	Other_or_unknown	FALSE
+0809	60	060-A3L	aspirate	healthy	left	67	Male	White	25	healthy	4	Hiseq_1	Other_or_unknown	TRUE
+0828	61	061-A5	lavage	lavage	lavage	62	Female	White	26	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+P061F	61	P061F	fecal	fecal	fecal	62	Female	White	26	serrated	6	Hiseq_1	fecal	TRUE
+0825	61	061-A3R	aspirate	healthy	right	62	Female	White	26	serrated	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0834	62	062-A3L	aspirate	healthy	left	65	Female	Asian	23	serrated	4	Hiseq_1	Miralax_(or_generic)	TRUE
+0837	62	062-A3R	aspirate	healthy	right	65	Female	Asian	23	serrated	4	Hiseq_1	Miralax_(or_generic)	TRUE
+P062F	62	P062F	fecal	fecal	fecal	65	Female	Asian	23	serrated	6	Hiseq_1	fecal	TRUE
+0846	63	063-A3R	aspirate	healthy	right	68	Female	White	30	healthy	4	Hiseq_1	Other_or_unknown	TRUE
+0857	64	064-A3L	aspirate	healthy	left	32	Male	Hispanic	32	healthy	4	Hiseq_1	Other_or_unknown	TRUE
+0859	64	064-A3R	aspirate	healthy	right	32	Male	Hispanic	32	healthy	4	Hiseq_1	Other_or_unknown	TRUE
+0872	65	065-A3R	aspirate	healthy	right	67	Female	Asian	24	TA	4	Hiseq_1	Miralax_(or_generic)	TRUE
+0875	65	065-A5	lavage	lavage	lavage	67	Female	Asian	24	TA	4	Hiseq_1	Miralax_(or_generic)	TRUE
+0870	65	065-A3L	aspirate	healthy	left	67	Female	Asian	24	TA	4	Hiseq_1	Miralax_(or_generic)	FALSE
+P065F	65	P065F	fecal	fecal	fecal	67	Female	Asian	24	TA	6	Hiseq_1	fecal	TRUE
+0888	66	066-A5	lavage	lavage	lavage	51	Male	White	23	serrated	2	Nextseq_2	Miralax_(or_generic)	FALSE
+0885	66	066-A3R	aspirate	healthy	right	51	Male	White	23	serrated	2	Nextseq_2	Miralax_(or_generic)	FALSE
+0886	66	066-A3R	aspirate	healthy	right	51	Male	White	23	serrated	4	Hiseq_1	Miralax_(or_generic)	TRUE
+0891	66	066-B3R	brush	healthy	right	51	Male	White	23	serrated	2	Nextseq_2	Miralax_(or_generic)	FALSE
+0893	66	066-B3L	brush	healthy	left	51	Male	White	23	serrated	2	Nextseq_2	Miralax_(or_generic)	FALSE
+0882	66	066-A3L	aspirate	healthy	left	51	Male	White	23	serrated	2	Nextseq_2	Miralax_(or_generic)	FALSE
+0892	66	066-B1R	brush	SSP	right	51	Male	White	23	serrated	2	Nextseq_2	Miralax_(or_generic)	FALSE
+0896	67	067-A3L	aspirate	healthy	left	unknown	Female	White	22	healthy	4	Hiseq_1	Other_or_unknown	TRUE
+0899	67	067-A3R	aspirate	healthy	right	unknown	Female	White	22	healthy	4	Hiseq_1	Other_or_unknown	FALSE
+0909	68	068-A3L	aspirate	healthy	left	65	Female	White	48	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0911	68	068-A3R	aspirate	healthy	right	65	Female	White	48	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0922	69	069-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	serrated	4	Hiseq_1	Other_or_unknown	FALSE
+0925	69	069-A3R	aspirate	healthy	right	unknown	unknown	unknown	unknown	serrated	4	Hiseq_1	Other_or_unknown	TRUE
+0938	70	070-A3R	aspirate	healthy	right	90	Female	White	32	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0935	70	070-A3L	aspirate	healthy	left	90	Female	White	32	TA	4	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+0953	71	071-A5	lavage	lavage	lavage	66	Male	White	24	healthy	4	Hiseq_1	Other_or_unknown	TRUE
+0950	71	071-A3R	aspirate	healthy	right	66	Male	White	24	healthy	4	Hiseq_1	Other_or_unknown	TRUE
+0948	71	071-A3L	aspirate	healthy	left	66	Male	White	24	healthy	4	Hiseq_1	Other_or_unknown	TRUE
+P071F	71	P071F	fecal	fecal	fecal	66	Male	White	24	healthy	6	Hiseq_1	fecal	TRUE
+0960	72	072-A3L	aspirate	healthy	left	68	Female	Asian	25	healthy	4	Hiseq_1	Other_or_unknown	FALSE
+0963	72	072-A3R	aspirate	healthy	right	68	Female	Asian	25	healthy	4	Hiseq_1	Other_or_unknown	FALSE
+0974	73	073-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+0976	73	073-A3R	aspirate	healthy	right	unknown	unknown	unknown	unknown	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+0990	74	074-A3R	aspirate	healthy	right	53	Male	White	30	unknown	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0987	74	074-A3L	aspirate	healthy	left	53	Male	White	30	unknown	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+0999	75	075-A3L	aspirate	healthy	left	55	Female	Hispanic	28	TA	5	Hiseq_1	Other_or_unknown	TRUE
+1003	75	075-A3R	aspirate	healthy	right	55	Female	Hispanic	28	TA	5	Hiseq_1	Other_or_unknown	TRUE
+P076F	76	P076F	fecal	fecal	fecal	54	Female	PI	27	TA	6	Hiseq_1	fecal	TRUE
+1026	77	077-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1029	77	077-A3R	aspirate	healthy	right	unknown	unknown	unknown	unknown	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+P077F	77	P077F	fecal	fecal	fecal	unknown	unknown	unknown	unknown	healthy	6	Hiseq_1	fecal	TRUE
+1032	77	077-A5	lavage	lavage	lavage	unknown	unknown	unknown	unknown	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1040	78	078-A3L	aspirate	healthy	left	49	Male	Asian	27	healthy	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1042	78	078-A3R	aspirate	healthy	right	49	Male	Asian	27	healthy	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+P078F	78	P078F	fecal	fecal	fecal	49	Male	Asian	27	healthy	6	Hiseq_1	fecal	TRUE
+1045	78	078-A5	lavage	lavage	lavage	49	Male	Asian	27	healthy	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+P079F	79	P079F	fecal	fecal	fecal	67	Female	Hispanic	28	serrated	6	Hiseq_1	fecal	TRUE
+1052	79	079-A3L	aspirate	healthy	left	67	Female	Hispanic	28	serrated	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1056	79	079-A3R	aspirate	healthy	right	67	Female	Hispanic	28	serrated	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+P080F	80	P080F	fecal	fecal	fecal	unknown	unknown	unknown	unknown	serrated	6	Hiseq_1	fecal	TRUE
+1066	80	080-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	serrated	5	Hiseq_1	Other_or_unknown	TRUE
+1068	80	080-A3R	aspirate	healthy	right	unknown	unknown	unknown	unknown	serrated	5	Hiseq_1	Other_or_unknown	TRUE
+1071	80	080-A5	lavage	lavage	lavage	unknown	unknown	unknown	unknown	serrated	5	Hiseq_1	Other_or_unknown	TRUE
+1079	81	081-A3L	aspirate	healthy	left	57	Male	Asian	23	TA	5	Hiseq_1	Miralax_(or_generic)	TRUE
+1081	81	081-A3R	aspirate	healthy	right	57	Male	Asian	23	TA	5	Hiseq_1	Miralax_(or_generic)	TRUE
+1102	82	082-B3L	brush	healthy	left	76	Male	Asian	29	TA	0	Nextseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1103	82	082-B1L	brush	TA	left	76	Male	Asian	29	TA	0	Nextseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+P082F	82	P082F	fecal	fecal	fecal	76	Male	Asian	29	TA	6	Hiseq_1	fecal	TRUE
+1097	82	082-A5	lavage	lavage	lavage	76	Male	Asian	29	TA	0	Nextseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1091	82	082-A3L	aspirate	healthy	left	76	Male	Asian	29	TA	0	Nextseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1101	82	082-B1R	brush	TA	right	76	Male	Asian	29	TA	0	Nextseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1100	82	082-B3R	brush	healthy	right	76	Male	Asian	29	TA	0	Nextseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1099	82	082-A5-G	lavage	lavage	lavage	76	Male	Asian	29	TA	0	Nextseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1108	83	083-A3R	aspirate	healthy	right	44	Male	Asian	26	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1104	83	083-A3L	aspirate	healthy	left	44	Male	Asian	26	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1117	84	084-A3L	aspirate	healthy	left	59	Female	White	16	TA	5	Hiseq_1	Miralax_(or_generic)	TRUE
+1120	84	084-A3R	aspirate	healthy	right	59	Female	White	16	TA	5	Hiseq_1	Miralax_(or_generic)	TRUE
+1130	85	085-A3L	aspirate	healthy	left	67	Male	White	33	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1134	85	085-A3R	aspirate	healthy	right	67	Male	White	33	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1162	87	087-A5	lavage	lavage	lavage	71	Female	White	31	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1159	87	087-A3R	aspirate	healthy	right	71	Female	White	31	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+P087F	87	P087F	fecal	fecal	fecal	71	Female	White	31	TA	6	Hiseq_1	fecal	TRUE
+1170	88	088-A3L	aspirate	healthy	left	57	Male	Asian	22	unknown	5	Hiseq_1	Other_or_unknown	FALSE
+1173	88	088-A3R	aspirate	healthy	right	57	Male	Asian	22	unknown	5	Hiseq_1	Other_or_unknown	FALSE
+1183	89	089-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	unknown	5	Hiseq_1	Other_or_unknown	FALSE
+1186	89	089-A3R	aspirate	healthy	right	unknown	unknown	unknown	unknown	unknown	5	Hiseq_1	Other_or_unknown	FALSE
+P089F	89	P089F	fecal	fecal	fecal	unknown	unknown	unknown	unknown	unknown	6	Hiseq_1	fecal	FALSE
+P090F	90	P090F	fecal	fecal	fecal	66	Female	White	39	TA	6	Hiseq_1	fecal	TRUE
+1211	91	091-A3R	aspirate	healthy	right	53	Male	White	33	serrated	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1209	91	091-A3L	aspirate	healthy	left	53	Male	White	33	serrated	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1224	92	092-A3R	aspirate	healthy	right	54	Female	Hispanic	27	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+P092F	92	P092F	fecal	fecal	fecal	54	Female	Hispanic	27	serrated	6	Hiseq_1	fecal	TRUE
+1232	92	092-B3L	brush	healthy	left	54	Female	Hispanic	27	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1227	92	092-A5	lavage	lavage	lavage	54	Female	Hispanic	27	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1231	92	092-B1R	brush	SSP	right	54	Female	Hispanic	27	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1230	92	092-B3R	brush	healthy	right	54	Female	Hispanic	27	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1222	92	092-A3L	aspirate	healthy	left	54	Female	Hispanic	27	serrated	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1228	92	092-A5	lavage	lavage	lavage	54	Female	Hispanic	27	serrated	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1221	92	092-A3L	aspirate	healthy	left	54	Female	Hispanic	27	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1234	93	093-A3L	aspirate	healthy	left	31	Female	White	21	unknown	5	Hiseq_1	Other_or_unknown	FALSE
+1237	93	093-A3R	aspirate	healthy	right	31	Female	White	21	unknown	5	Hiseq_1	Other_or_unknown	FALSE
+1248	94	094-A3L	aspirate	healthy	left	65	Female	White	24	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1250	94	094-A3R	aspirate	healthy	right	65	Female	White	24	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1260	95	095-A3L	aspirate	healthy	left	68	Male	White	31	healthy	0	Nextseq_1	Other_or_unknown	FALSE
+1263	95	095-A3R	aspirate	healthy	right	68	Male	White	31	healthy	0	Nextseq_1	Other_or_unknown	FALSE
+1266	95	095-A5	lavage	lavage	lavage	68	Male	White	31	healthy	0	Nextseq_1	Other_or_unknown	FALSE
+1271	95	095-B3L	brush	healthy	left	68	Male	White	31	healthy	0	Nextseq_1	Other_or_unknown	FALSE
+1277	96	096-A3R	aspirate	healthy	right	53	Male	White	24	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1274	96	096-A3L	aspirate	healthy	left	53	Male	White	24	healthy	5	Hiseq_1	Other_or_unknown	FALSE
+1289	97	097-A3R	aspirate	healthy	right	64	Female	White	23	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1287	97	097-A3L	aspirate	healthy	left	64	Female	White	23	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1299	98	098-A3L	aspirate	healthy	left	69	Male	White	27	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1302	98	098-A3R	aspirate	healthy	right	69	Male	White	27	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1312	99	099-A3L	aspirate	healthy	left	57	Female	White	19	TA	5	Hiseq_1	Miralax_(or_generic)	TRUE
+1318	99	099-A5	lavage	lavage	lavage	57	Female	White	19	TA	5	Hiseq_1	Miralax_(or_generic)	TRUE
+1316	99	099-A3R	aspirate	healthy	right	57	Female	White	19	TA	5	Hiseq_1	Miralax_(or_generic)	TRUE
+P099F	99	P099F	fecal	fecal	fecal	57	Female	White	19	TA	6	Hiseq_1	fecal	TRUE
+1328	100	100-A3R	aspirate	healthy	right	22	Male	White	24	serrated	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1325	100	100-A3L	aspirate	healthy	left	22	Male	White	24	serrated	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1339	101	101-A3L	aspirate	healthy	left	83	Male	Hispanic	20	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1341	101	101-A3R	aspirate	healthy	right	83	Male	Hispanic	20	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1360	102	102-B3R	brush	healthy	right	68	Male	White	20	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1354	102	102-A3R	aspirate	healthy	right	68	Male	White	20	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1357	102	102-A5	lavage	lavage	lavage	68	Male	White	20	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1362	102	102-B3L	brush	healthy	left	68	Male	White	20	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1351	102	102-A3L	aspirate	healthy	left	68	Male	White	20	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1361	102	102-B1R	brush	SSP	right	68	Male	White	20	serrated	2	Nextseq_2	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1365	103	103-A3L	aspirate	healthy	left	56	Male	Black	25	serrated	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1367	103	103-A3R	aspirate	healthy	right	56	Male	Black	25	serrated	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1378	104	104-A3L	aspirate	healthy	left	33	Female	Asian	20	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1380	104	104-A3R	aspirate	healthy	right	33	Female	Asian	20	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1391	105	105-A3L	aspirate	healthy	left	52	Male	Hispanic	32	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1393	105	105-A3R	aspirate	healthy	right	52	Male	Hispanic	32	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1406	106	106-A3R	aspirate	healthy	right	65	Female	White	20	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1403	106	106-A3L	aspirate	healthy	left	65	Female	White	20	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1420	107	107-A3R	aspirate	healthy	right	65	Female	White	21	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1417	107	107-A3L	aspirate	healthy	left	65	Female	White	21	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1429	108	108-A3L	aspirate	healthy	left	66	Female	Black	26	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1432	108	108-A3R	aspirate	healthy	right	66	Female	Black	26	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1449	109	109-A5	lavage	lavage	lavage	73	Male	White	28	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1445	109	109-A3R	aspirate	healthy	right	73	Male	White	28	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+P109F	109	P109F	fecal	fecal	fecal	73	Male	White	28	TA	6	Hiseq_1	fecal	TRUE
+1443	109	109-A3L	aspirate	healthy	left	73	Male	White	28	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1458	110	110-A3R	aspirate	healthy	right	54	Male	White	31	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1455	110	110-A3L	aspirate	healthy	left	54	Male	White	31	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1468	111	111-A3L	aspirate	healthy	left	53	Male	White	28	serrated	5	Hiseq_1	Miralax_(or_generic)	TRUE
+1472	111	111-A3R	aspirate	healthy	right	53	Male	White	28	serrated	5	Hiseq_1	Miralax_(or_generic)	TRUE
+1484	112	112-A3R	aspirate	healthy	right	71	Male	White	45	unknown	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1482	112	112-A3L	aspirate	healthy	left	71	Male	White	45	unknown	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1494	113	113-A3L	aspirate	healthy	left	51	Female	White	23	healthy	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1498	113	113-A3R	aspirate	healthy	right	51	Female	White	23	healthy	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1508	114	114-A3L	aspirate	healthy	left	52	Female	White	34	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1510	114	114-A3R	aspirate	healthy	right	52	Female	White	34	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1520	115	115-A3L	aspirate	healthy	left	70	Female	Hispanic	32	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1524	115	115-A3R	aspirate	healthy	right	70	Female	Hispanic	32	healthy	5	Hiseq_1	Other_or_unknown	TRUE
+1536	116	116-A3R	aspirate	healthy	right	64	Male	White	45	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1534	116	116-A3L	aspirate	healthy	left	64	Male	White	45	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1546	117	117-A3L	aspirate	healthy	left	55	Male	White	23	serrated	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1550	117	117-A3R	aspirate	healthy	right	55	Male	White	23	serrated	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1559	118	118-A3L	aspirate	healthy	left	52	Male	White	26	unknown	5	Hiseq_1	Other_or_unknown	FALSE
+1561	118	118-A3R	aspirate	healthy	right	52	Male	White	26	unknown	5	Hiseq_1	Other_or_unknown	FALSE
+1575	119	119-A3R	aspirate	healthy	right	67	Male	White	24	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1572	119	119-A3L	aspirate	healthy	left	67	Male	White	24	TA	5	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1584	120	120-A3L	aspirate	healthy	left	66	Female	Hispanic	25	serrated	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1588	120	120-A3R	aspirate	healthy	right	66	Female	Hispanic	25	serrated	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1600	121	121-A3R	aspirate	healthy	right	32	Male	White	37	healthy	6	Hiseq_1	Other_or_unknown	TRUE
+1597	121	121-A3L	aspirate	healthy	left	32	Male	White	37	healthy	6	Hiseq_1	Other_or_unknown	TRUE
+1613	122	122-A3R	aspirate	healthy	right	68	Male	Asian	25	serrated	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1617	122	122-A5	lavage	lavage	lavage	68	Male	Asian	25	serrated	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1611	122	122-A3L	aspirate	healthy	left	68	Male	Asian	25	serrated	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+P122F	122	P122F	fecal	fecal	fecal	68	Male	Asian	25	serrated	6	Hiseq_1	fecal	TRUE
+1623	123	123-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	unknown	6	Hiseq_1	Other_or_unknown	FALSE
+1627	123	123-A3R	aspirate	healthy	right	unknown	unknown	unknown	unknown	unknown	6	Hiseq_1	Other_or_unknown	FALSE
+1629	123	123-A5	lavage	lavage	lavage	unknown	unknown	unknown	unknown	unknown	6	Hiseq_1	Other_or_unknown	FALSE
+P123F	123	P123F	fecal	fecal	fecal	unknown	unknown	unknown	unknown	unknown	6	Hiseq_1	fecal	FALSE
+1639	124	124-A3R	aspirate	healthy	right	60	Male	White	28	serrated	6	Hiseq_1	Miralax_(or_generic)	TRUE
+1637	124	124-A3L	aspirate	healthy	left	60	Male	White	28	serrated	6	Hiseq_1	Miralax_(or_generic)	TRUE
+1652	125	125-A3R	aspirate	healthy	right	53	Female	White	36	TA	6	Hiseq_1	Miralax_(or_generic)	TRUE
+1650	125	125-A3L	aspirate	healthy	left	53	Female	White	36	TA	6	Hiseq_1	Miralax_(or_generic)	TRUE
+1663	126	126-A3L	aspirate	healthy	left	71	Female	Asian	27	healthy	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1666	126	126-A3R	aspirate	healthy	right	71	Female	Asian	27	healthy	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1679	127	127-A3R	aspirate	healthy	right	50	Male	Asian	23	TA	6	Hiseq_1	Miralax_(or_generic)	TRUE
+1676	127	127-A3L	aspirate	healthy	left	50	Male	Asian	23	TA	6	Hiseq_1	Miralax_(or_generic)	TRUE
+1691	128	128-A3R	aspirate	healthy	right	80	Female	Hispanic	27	TA	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1688	128	128-A3L	aspirate	healthy	left	80	Female	Hispanic	27	TA	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1695	128	128-A5	lavage	lavage	lavage	80	Female	Hispanic	27	TA	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1706	129	129-A3R	aspirate	healthy	right	69	Male	White	23	TA	6	Hiseq_1	Miralax_(or_generic)	TRUE
+P129F	129	P129F	fecal	fecal	fecal	69	Male	White	23	TA	6	Hiseq_1	fecal	TRUE
+1703	129	129-A3L	aspirate	healthy	left	69	Male	White	23	TA	6	Hiseq_1	Miralax_(or_generic)	TRUE
+1717	130	130-A3L	aspirate	healthy	left	75	Male	Asian	25	healthy	6	Hiseq_1	Other_or_unknown	TRUE
+1720	130	130-A3R	aspirate	healthy	right	75	Male	Asian	25	healthy	6	Hiseq_1	Other_or_unknown	TRUE
+1734	131	131-A3R	aspirate	healthy	right	unknown	unknown	unknown	unknown	unknown	6	Hiseq_1	Other_or_unknown	FALSE
+1732	131	131-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	unknown	6	Hiseq_1	Other_or_unknown	FALSE
+1745	132	132-A3L	aspirate	healthy	left	64	Female	White	18	healthy	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+P132F	132	P132F	fecal	fecal	fecal	64	Female	White	18	healthy	6	Hiseq_1	fecal	TRUE
+1748	132	132-A3R	aspirate	healthy	right	64	Female	White	18	healthy	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1758	133	133-A3L	aspirate	healthy	left	67	Male	White	21	TA	6	Hiseq_1	Miralax_(or_generic)	FALSE
+1763	133	133-A5	lavage	lavage	lavage	67	Male	White	21	TA	6	Hiseq_1	Miralax_(or_generic)	TRUE
+1760	133	133-A3R	aspirate	healthy	right	67	Male	White	21	TA	6	Hiseq_1	Miralax_(or_generic)	TRUE
+P133F	133	P133F	fecal	fecal	fecal	67	Male	White	21	TA	6	Hiseq_1	fecal	TRUE
+1774	134	134-A3R	aspirate	healthy	right	46	Male	Asian	32	serrated	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1771	134	134-A3L	aspirate	healthy	left	46	Male	Asian	32	serrated	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+P135F	135	P135F	fecal	fecal	fecal	61	Male	White	24	TA	6	Hiseq_1	fecal	TRUE
+1787	135	135-A3R	aspirate	healthy	right	61	Male	White	24	TA	6	Hiseq_1	Other_or_unknown	FALSE
+1789	135	135-A5	lavage	lavage	lavage	61	Male	White	24	TA	6	Hiseq_1	Other_or_unknown	TRUE
+1783	135	135-A3L	aspirate	healthy	left	61	Male	White	24	TA	6	Hiseq_1	Other_or_unknown	TRUE
+1800	136	136-A3R	aspirate	healthy	right	37	Female	White	19	healthy	6	Hiseq_1	Other_or_unknown	TRUE
+1797	136	136-A3L	aspirate	healthy	left	37	Female	White	19	healthy	6	Hiseq_1	Other_or_unknown	FALSE
+1810	137	137-A3L	aspirate	healthy	left	66	Male	Asian	31	TA	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1812	137	137-A3R	aspirate	healthy	right	66	Male	Asian	31	TA	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	TRUE
+1826	138	138-A3R	aspirate	healthy	right	unknown	unknown	unknown	unknown	unknown	6	Hiseq_1	Other_or_unknown	FALSE
+1822	138	138-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	unknown	6	Hiseq_1	Other_or_unknown	FALSE
+1838	139	139-A3R	aspirate	healthy	right	unknown	unknown	unknown	unknown	healthy	6	Hiseq_1	Other_or_unknown	TRUE
+1841	139	139-A5	lavage	lavage	lavage	unknown	unknown	unknown	unknown	healthy	6	Hiseq_1	Other_or_unknown	TRUE
+1835	139	139-A3L	aspirate	healthy	left	unknown	unknown	unknown	unknown	healthy	6	Hiseq_1	Other_or_unknown	TRUE
+P139F	139	P139F	fecal	fecal	fecal	unknown	unknown	unknown	unknown	healthy	6	Hiseq_1	fecal	TRUE
+1849	140	140-A3L	aspirate	healthy	left	55	Female	Asian	31	healthy	6	Hiseq_1	Other_or_unknown	TRUE
+1851	140	140-A3R	aspirate	healthy	right	55	Female	Asian	31	healthy	6	Hiseq_1	Other_or_unknown	FALSE
+1864	141	141-A3R	aspirate	healthy	right	69	Female	Asian	27	unknown	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE
+1862	141	141-A3L	aspirate	healthy	left	69	Female	Asian	27	unknown	6	Hiseq_1	PEG_w_lytes_(Golytely,_Trilyte,_etc)	FALSE

@@ -8,23 +8,23 @@ library(IHW)
 library(ggpubr)
 library(lemon)
 
-setwd("/media/julio/Storage/CRC/Summer_2019_colon_cancer_data")
+setwd("/media/julio/Storage/CRC/github/")
 register(MulticoreParam(4)) #Use four cores
 
-metadata <- read.delim("/media/julio/Storage/CRC/CC_docs/Shotgun_metadata_final.tsv", row.names=1, comment.char="#", check.names = F)
+metadata <- read.delim("Shotgun_metadata.tsv", row.names=1, comment.char="#", check.names = F)
 contig_table <- read.delim("/media/julio/Storage/CRC/Summer_2019_colon_cancer_data/functional/contig_table.txt", row.names=1, check.names = F)
 anots <- read.delim("/media/julio/Storage/CRC/Summer_2019_colon_cancer_data/functional/eggnog.emapper.annotations", comment.char = "#", header=FALSE, row.names = 1)
 
 metadata$Patient <- as.factor(metadata$Patient)
 contig_table <- contig_table[rowSums(contig_table) >= 10,] #Get rid of genes with low read counts
 
-#Just grab any random sample for the gene lengths to divide by
-gene_lengths = read.delim("functional/pile_up/0054_norm.txt", header=FALSE, comment.char="#") %>% .[,1:2]
+#gene lengths
+gene_lengths = read.delim("gene_lengths.txt", header=FALSE, comment.char="#") %>% .[,1:2]
 colnames(gene_lengths) = c("ORF", "gene_length")
 gene_lengths$gene_length = gene_lengths$gene_length/1000 #in Kb
 
 #From microbe census
-genome_equivs = read.table("mic_cense_genome_equivs_merged.txt")
+genome_equivs = read.table("/media/julio/Storage/CRC/Summer_2019_colon_cancer_data/mic_cense_genome_equivs_merged.txt")
 
 #Divide reads hitting to ORF by gene length & genome equivalents.
 RPKG = merge(gene_lengths, contig_table, by.x = "ORF", by.y = "row.names") %>% column_to_rownames(var = "ORF")
@@ -35,59 +35,59 @@ RPKG2 = as.data.frame(t(RPKG2[,-1]/RPKG2$V2))
 eggnog_table = merge(anots, RPKG2, by = "row.names")
 
 #### Bar plot ####
-brite <- read.delim("/media/julio/Storage/DBs/brite.txt", header=FALSE)
+#brite <- read.delim("/media/julio/Storage/DBs/brite.txt", header=FALSE)
 
-lastValue <- function(x) tail(x[!is.na(x)], 1)
-brite_list <- tidyr::separate(anots, col = V14, into = c("L1","L2","L3","L4","L5","L6","L7","L8","L9","L10", 
-                                                         "L11","L12","L13", "L14","L15","L16","L17","L18","L19",
-                                                         "L20","L21","L22"), sep = "\\,", remove = T, extra = "drop")  %>% .[,13:(13+21)]
-brite_list <- as.data.frame(apply(brite_list, 1, lastValue))
-brite_list <- subset(brite_list, !(brite_list == "")) 
+#lastValue <- function(x) tail(x[!is.na(x)], 1)
+#brite_list <- tidyr::separate(anots, col = V14, into = c("L1","L2","L3","L4","L5","L6","L7","L8","L9","L10", 
+#                                                         "L11","L12","L13", "L14","L15","L16","L17","L18","L19",
+#                                                         "L20","L21","L22"), sep = "\\,", remove = T, extra = "drop")  %>% .[,13:(13+21)]
+#brite_list <- as.data.frame(apply(brite_list, 1, lastValue))
+#brite_list <- subset(brite_list, !(brite_list == "")) 
 
-colnames(brite_list) <- "V1"
-brite_list$Row.names <- rownames(brite_list)
-brite_list <- merge(brite_list, brite, by = "V1")
+#colnames(brite_list) <- "V1"
+#brite_list$Row.names <- rownames(brite_list)
+#brite_list <- merge(brite_list, brite, by = "V1")
 
-contig_relab = t(RPKG2)/rowSums(t(RPKG2))
-contig_relab <- contig_relab %>% reshape2::melt()
-contig_relab <- contig_relab[!(contig_relab$value == 0),]
+#contig_relab = t(RPKG2)/rowSums(t(RPKG2))
+#contig_relab <- contig_relab %>% reshape2::melt()
+#contig_relab <- contig_relab[!(contig_relab$value == 0),]
 
-plot_df <- subset(contig_relab, contig_relab$Var2 %in% brite_list$Row.names)
-plot_df2 <- merge(plot_df,brite_list[,c("Row.names","V2")], by.x = "Var2", by.y = "Row.names") %>% merge(., metadata, by.x = "Var1", by.y = "row.names")
-plot_df2$V2 = as.character(plot_df2$V2)
+#plot_df <- subset(contig_relab, contig_relab$Var2 %in% brite_list$Row.names)
+#plot_df2 <- merge(plot_df,brite_list[,c("Row.names","V2")], by.x = "Var2", by.y = "Row.names") %>% merge(., metadata, by.x = "Var1", by.y = "row.names")
+#plot_df2$V2 = as.character(plot_df2$V2)
 
 #Take top 10 genes.
-top_genes <- group_by(plot_df2, V2) %>% summarise(., top_genes_tmp = sum(value)) %>% arrange(., desc(top_genes_tmp)) %>% slice(., 1:10)
-high_abundance <- split(top_genes$V2, 1:NROW(top_genes))
+#top_genes <- group_by(plot_df2, V2) %>% summarise(., top_genes_tmp = sum(value)) %>% arrange(., desc(top_genes_tmp)) %>% slice(., 1:10)
+#high_abundance <- split(top_genes$V2, 1:NROW(top_genes))
 
 #Change non top hits to other.
-plot_df2$V2[plot_df2$V2 %in% high_abundance != "TRUE"] <- "Other"
-plot_df2 <- plot_df2[order(plot_df2$V2),] #Re order
-plot_df2 <- rbind(plot_df2[!(plot_df2$V2 == "Other"),],plot_df2[(plot_df2$V2 == "Other"),]) #Move other to bottom
-plot_df2$V2 <- factor(plot_df2$V2, levels = unique(plot_df2$V2)) #Fix the order
+#plot_df2$V2[plot_df2$V2 %in% high_abundance != "TRUE"] <- "Other"
+#plot_df2 <- plot_df2[order(plot_df2$V2),] #Re order
+#plot_df2 <- rbind(plot_df2[!(plot_df2$V2 == "Other"),],plot_df2[(plot_df2$V2 == "Other"),]) #Move other to bottom
+#plot_df2$V2 <- factor(plot_df2$V2, levels = unique(plot_df2$V2)) #Fix the order
 
 #IF you remove enzyme then you need this next line.
-relab <- aggregate(plot_df2$value, by=list(Var1=plot_df2$Var1), FUN=sum)
-plot_df2 <- merge(plot_df2, relab, by = "Var1")
-plot_df2$relab <- plot_df2$value/plot_df2$x
-plot_df2 = plot_df2 %>% dplyr::filter(!MostMalignantPolypType %in% c("unknown", "adenocarcinoma"))
+#relab <- aggregate(plot_df2$value, by=list(Var1=plot_df2$Var1), FUN=sum)
+#plot_df2 <- merge(plot_df2, relab, by = "Var1")
+#plot_df2$relab <- plot_df2$value/plot_df2$x
+#plot_df2 = plot_df2 %>% dplyr::filter(!MostMalignantPolypType %in% c("unknown", "adenocarcinoma"))
 
-sarah_color <- c("#003f5c", "#665191", "#d45087", "#ff7c43","#ffa600", "#7F0A57", "#CD9ABB", "#39A9AB", "#71CFC5", "#007947", "gray")
+#sarah_color <- c("#003f5c", "#665191", "#d45087", "#ff7c43","#ffa600", "#7F0A57", "#CD9ABB", "#39A9AB", "#71CFC5", "#007947", "gray")
 
-brite_plot = ggplot(data = plot_df2, aes(x = Var1, weight = relab, fill = V2)) +
-  geom_bar(width = 1, color = "black", size = .2) +
-  theme_classic(base_size = 16) +
-  facet_wrap(SampleType~MostMalignantPolypType, scales = "free", labeller = 
-               labeller(SampleType = c(`aspirate` = "Aspirate", `fecal` = "Fecal", `lavage` = "Lavage"), 
-                        MostMalignantPolypType = c(`healthy`="Polyp free", `TA`="TA", `serrated`="Serrated"))) +
-  scale_fill_manual(values = sarah_color) +
-  theme(axis.text.x=element_blank(), axis.ticks.x = element_blank(), strip.text.x = element_text(size = 10), 
-        strip.background = element_rect(fill="lightblue")) +
-  labs(x = NULL,
-       y = "Relative abundance", fill = "KEGG Brite pathway", title = "Shotgun - Individuals: 104")
-brite_plot
+#brite_plot = ggplot(data = plot_df2, aes(x = Var1, weight = relab, fill = V2)) +
+#  geom_bar(width = 1, color = "black", size = .2) +
+#  theme_classic(base_size = 16) +
+#  facet_wrap(SampleType~MostMalignantPolypType, scales = "free", labeller = 
+#               labeller(SampleType = c(`aspirate` = "Aspirate", `fecal` = "Fecal", `lavage` = "Lavage"), 
+#                        MostMalignantPolypType = c(`healthy`="Polyp free", `TA`="TA", `serrated`="Serrated"))) +
+#  scale_fill_manual(values = sarah_color) +
+#  theme(axis.text.x=element_blank(), axis.ticks.x = element_blank(), strip.text.x = element_text(size = 10), 
+#        strip.background = element_rect(fill="lightblue")) +
+#  labs(x = NULL,
+#       y = "Relative abundance", fill = "KEGG Brite pathway", title = "Shotgun - Individuals: 104")
+#brite_plot
 
-ggsave("Brite_plot.png", plot = brite_plot, device = "png", units = "in", dpi = 300, height = 10, width = 14)
+#ggsave("Brite_plot.png", plot = brite_plot, device = "png", units = "in", dpi = 300, height = 10, width = 14)
 
 #PCoA
 #http://r-sig-ecology.471788.n2.nabble.com/Variability-explanations-for-the-PCO-axes-as-in-Anderson-and-Willis-2003-td6429547.html
@@ -348,7 +348,7 @@ adonis(formula = eggnog_merged[,14:ncol(eggnog_merged)] ~ as.numeric(eggnog_merg
 #RPKG2 = RPKG2[1:50000,] #Delete this when you want to run the full dataset (takes forever)
 
 RPKG2_merged = as.matrix(t(RPKG2)) %>% merge(metadata, ., by = "row.names") 
-Asps_only = RPKG2_merged %>% filter(SampleType == "aspirate") %>% column_to_rownames(var = "Row.names") %>% select(!Patient:PrepType)
+Asps_only = RPKG2_merged %>% filter(SampleType == "aspirate") %>% column_to_rownames(var = "Row.names") %>% select(!Patient:InFinalAnalysis)
 
 variance_filter = as.matrix(Asps_only) %>% reshape2::melt(.) %>% mutate(not_zero = ifelse(value != 0, T, F)) %>% 
   group_by(Var2) %>% summarise(n_not_zero = sum(not_zero)) %>% filter(n_not_zero <= round(nrow(Asps_only)*0.2))
@@ -443,7 +443,7 @@ RPKG_means = RPKG2_merged %>% filter(SampleType == "aspirate", !MostMalignantPol
   summarise(across((ncol(metadata)+2):(ncol(.)-1), mean)) %>% column_to_rownames(var = "MostMalignantPolypType")
 RPKG_means = as.data.frame(t(RPKG_means)) + 0.01
 RPKG_means$names = rownames(RPKG_means)
-  
+
 #Healthy vs TA
 FC_healthy_TA = log2(as.data.frame(RPKG_means$TA/RPKG_means$healthy)) %>% dplyr::rename(Log2FoldChange = 1) %>% 
   magrittr::set_rownames(rownames(RPKG_means))
