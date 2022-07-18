@@ -135,8 +135,8 @@ ITS_rich_polyp
 ITS_alpha <- plot_grid(ITS_shannon, ITS_rich, ncol = 1, rel_widths = c(1,1))
 ITS_alpha_polyp <- plot_grid(ITS_shannon_polyp, ITS_rich_polyp, rel_widths = c(1, 1.55))
 
-ggsave("ITS_alpha.png", plot = ITS_alpha, device = "png", units = "in", dpi = 300, height = 5, width = 8)
-ggsave("ITS_alpha_polyp.png", plot = ITS_alpha_polyp, device = "png", units = "in", dpi = 300, height = 4, width = 10)
+#ggsave("ITS_alpha.png", plot = ITS_alpha, device = "png", units = "in", dpi = 300, height = 5, width = 8)
+#ggsave("ITS_alpha_polyp.png", plot = ITS_alpha_polyp, device = "png", units = "in", dpi = 300, height = 4, width = 10)
 
 specno_lm <- NULL
 specno_lm$x <- as.numeric(specno$`specnumber(ITS_rared_OTU)`)

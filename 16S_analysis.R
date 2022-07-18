@@ -79,10 +79,10 @@ for (i in seq_along(rare_curve)) {
 abline(v = 2500, lty = 2, col = "red")
 
 #Didn't actually rarefy, just dropped samples under 2,500 sequences.
-#Variable name is misleading.
+#Variable name is misleading post reviewer comments.
 rared_OTU = OTU_clean[!rowSums(OTU_clean) <= 2500,]
 
-#Performing the actual rarefaction, be sure to change the 'sample = X' to the proper rarefaction depth. Should be >= 1000 at least.
+#Performing the actual rarefaction
 #rared_OTU <- as.data.frame((rrarefy.perm(OTU_clean, sample = rd, n = 10, round.out = T))) #Change 'sample =' parameter to rarefaction depth.
 
 #This only keeps the samples that meet the rarefaction cutoff.
@@ -365,12 +365,12 @@ fig3b <- plot_grid(fig3b1, fig3b2)
 
 #Beta
 brush_mds <- metaMDS(OTU_brush, trymax = 999)
-brush_test <- merge(brush_mds$points[,1:2], metadata, by.x = "row.names", by.y = "row.names")
+brush_mds_merged <- merge(brush_mds$points[,1:2], metadata, by.x = "row.names", by.y = "row.names")
 
-brush_test$SampleSite <- as.character(brush_test$SampleSite)
-brush_test$SampleSite[!(brush_test$SampleSite == "healthy")] <- "polyp"
+brush_mds_merged$SampleSite <- as.character(brush_mds_merged$SampleSite)
+brush_mds_merged$SampleSite[!(brush_mds_merged$SampleSite == "healthy")] <- "polyp"
   
-fig3c <- ggplot(data = brush_test) +
+fig3c <- ggplot(data = brush_mds_merged) +
   aes(x = MDS1, y = MDS2) +
   theme_bw() +
   geom_path(aes(group = Patient), linetype = 2) +
@@ -379,7 +379,7 @@ fig3c <- ggplot(data = brush_test) +
   scale_shape_manual(values = c(21,22), name = "Colon location", labels = c("Left", "Right")) +
   guides(color = "none", fill = guide_legend(override.aes = list(shape = 21))) +
   scale_fill_manual(name = "Tissue type", values=c("forestgreen", "firebrick3"), labels = c("Polyp free", "Polyp")) +
-  geom_text(label = brush_test$Patient, size = 4, color = "black") +
+  geom_text(label = brush_mds_merged$Patient, size = 4, color = "black") +
   annotate("text", x = -2.1, y = 1.7, label = bquote("Stress ="~.(round(brush_mds$stress, digits = 2))), hjust = 0)
 fig3c
 
@@ -457,7 +457,7 @@ genus_barplot <- plot_grid(brush_barplot1, brush_barplot2, nrow = 1, rel_widths 
 #ggsave("genus_barplot.svg", genus_barplot, device = "svg", dpi = 300, height = 5, width = 7)
 
 #Blank plot
-blank <- ggplot(data = brush_test) +
+blank <- ggplot(data = brush_mds_merged) +
   geom_blank() +
   theme_classic() +
   theme(axis.line = element_blank())
